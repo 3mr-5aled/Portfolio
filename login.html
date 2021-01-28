@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login page</title>
+</head>
+
+<body>
+	Sign in
+	<form action="" method="POST">
+		<label for="">Username</label>
+    <br>
+      <input 
+      type="text" 
+      required placeholder="Username" 
+      name="user" 
+      autofocus 
+      minlength="4" 
+      maxlength="15">
+    <br>
+        <label for="">Email</label>
+    <br>
+      <input 
+      type="email" 
+      required placeholder="Email" 
+      value="a@mail.com" 
+      name="mail">
+    <br>
+        <label for="">Phone Number</label>
+    <br>
+      <input 
+      type="number" 
+      required placeholder="Phone" 
+      name="phone" 
+      minlength="9" 
+      maxlength="11">
+    <br>
+        <label for="">Password</label>
+    <br>
+      <input 
+      type="password" 
+      required placeholder="password" 
+      name="password" 
+      minlength="5" 
+      maxlength="20">
+      <br>
+      <label for="">Age</label>
+      <br>
+      <input 
+      type="number" 
+      required placeholder="Age" 
+      name="number" 
+      min="0" 
+      max="150">
+      <br>
+      <label for="">Gender</label>
+      <br>
+      <input
+      id="male" 
+      type="radio" 
+      required
+      name="gender"
+      > 
+      <label for="male"> Male</label>
+      <br>
+      <input
+      id="female" 
+      type="radio" 
+      required
+      name="gender"
+      ><label for="female">Female</label>
+      <br>
+     <input name="country" list="countries" placeholder="country">
+        <datalist id="countries">
+        <option value="Egypt">
+        <option value="Saudi Arabia">
+        <option value="UAE">
+        </datalist>
+      <br>
+    <label for="bio">Bio</label>
+    <br>
+     <textarea name="bio" id="bio" cols="40" rows="5"></textarea>
+      <br>
+   <input type="submit" value="Save">
+   <input type="reset" value="reset">
+  </form>
+</body>
+</html>
