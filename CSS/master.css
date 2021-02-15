@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+header {
+  background-image: linear-gradient(to right, black, red);
+  color: white;
+  padding: 10px;
+  /* Top  Right Bottom Left
+     10px 10px  10px   10px */
+}
+section {
+  background-image: url("https://res.cloudinary.com/demo/image/upload/w_500/sample.jpg");
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-size: cover;
+  /* border: 5px;
+  border-color: rgb(0, 255, 136) cyan;
+  border-style: solid; */
+  border: 5px solid cyan;
+}
+article {
+  background-image: linear-gradient(red, rgb(0, 248, 227));
+  color: white;
+  padding: 10px;
+}
+.welcome-screen {
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px;
+}
