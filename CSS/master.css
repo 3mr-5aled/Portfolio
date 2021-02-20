@@ -12,24 +12,39 @@ header {
      10px 10px  10px   10px */
 }
 section {
-  background-image: url("https://res.cloudinary.com/demo/image/upload/w_500/sample.jpg");
+  background-image: url("/Coding-background.jpeg");
   background-attachment: fixed;
   /* background-position: center; */
   background-size: cover;
   /* border: 5px;
   border-color: rgb(0, 255, 136) cyan;
   border-style: solid; */
-  border: 5px solid cyan;
+  border: 5px solid white;
 }
 article {
   background-image: linear-gradient(red, rgb(0, 248, 227));
   color: white;
   padding: 10px;
+  line-height: 1.6;
+  word-break: break-word;
 }
 .welcome-screen {
-  text-align: center;
   font-size: xx-large;
+  font-weight: bold;
+  background-color: green;
+  height: fit-content;
+  width: fit-content;
   padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: 5px solid white;
+}
+.arabic {
+  text-align: right;
+  direction: rtl;
+  letter-spacing: 0;
 }
 .header_links {
   display: inline-block;
