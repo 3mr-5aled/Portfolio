@@ -7,7 +7,8 @@ body {
 header {
   background-image: linear-gradient(to right, black, red);
   color: white;
-  padding: 10px;
+  overflow: hidden;
+  height: 100px;
   /* Top  Right Bottom Left
      10px 10px  10px   10px */
 }
@@ -27,10 +28,12 @@ article {
   padding: 10px;
   line-height: 1.6;
   word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .welcome-screen {
   font-size: xx-large;
   font-weight: bold;
+  font-family: "Cairo", sans-serif;
   background-color: green;
   height: fit-content;
   width: fit-content;
@@ -47,6 +50,29 @@ article {
   letter-spacing: 0;
 }
 .header_links {
+  margin-top: inherit;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.nav_links {
+}
+.logo {
+  float: left;
+  display: inline-block;
+  margin: 0;
+}
+button {
+  background: transparent;
+  cursor: pointer;
+}
+.nav_links,
+.header_links {
   display: inline-block;
   padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+.clear {
+  clear: both;
 }
