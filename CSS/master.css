@@ -59,8 +59,16 @@ article {
   background-color: transparent;
   border: 2px solid white;
   border-radius: 10px;
+  text-decoration: none;
 }
-.nav_links {
+.header_links:hover {
+  background-color: black;
+  border: 2px solid red;
+}
+#list-nav {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
 }
 .logo {
   float: left;
@@ -91,4 +99,8 @@ button {
   right: 20px;
   text-align: center;
   z-index: 101;
+}
+.scroll-up:hover {
+  background-color: aqua;
+  cursor: pointer;
 }

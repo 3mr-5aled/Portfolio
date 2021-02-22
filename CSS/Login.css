@@ -1,0 +1,11 @@
+.ch:checked + label {
+  background-color: #eee;
+  color: red;
+}
+.in {
+  border: 3px solid black;
+}
+.in:focus {
+  border-color: red;
+  outline: none;
+}
