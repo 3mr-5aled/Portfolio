@@ -3,12 +3,17 @@ body {
   color: white;
   padding: 10px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header {
   background-image: linear-gradient(to right, black, red);
   color: white;
   overflow: hidden;
   height: 100px;
+  position: sticky;
+  top: 5px;
+  border-radius: 10px;
+  z-index: 100;
   /* Top  Right Bottom Left
      10px 10px  10px   10px */
 }
@@ -75,4 +80,15 @@ button {
 }
 .clear {
   clear: both;
+}
+.scroll-up {
+  background-color: red;
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  text-align: center;
+  z-index: 101;
 }
