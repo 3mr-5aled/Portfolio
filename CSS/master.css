@@ -1,20 +1,42 @@
 body {
   display: grid;
-  background-color: black;
+  background-color: rgb(36, 39, 41);
   color: white;
-  padding: 10px;
+
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.body-margin {
+  padding: 10px;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: red;
+  height: 1px;
+}
+/* .one::before {
+  content: url(/Logo.png);
+  float: left;
+  display: inline-block;
+  margin: 0;
+  postion:aboulte;
+} */
 header {
   background-image: linear-gradient(to right, black, red);
   color: white;
   overflow: hidden;
   height: 100px;
+  width: 100%;
   position: sticky;
-  top: 5px;
-  border-radius: 10px;
+  top: 0px;
+  /* border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; */
   z-index: 100;
+  padding: none;
   /* Top  Right Bottom Left
      10px 10px  10px   10px */
 }
@@ -27,14 +49,22 @@ section {
   border-color: rgb(0, 255, 136) cyan;
   border-style: solid; */
   border: 5px solid white;
+  margin: 10px;
+  border-radius: 10px;
 }
 article {
-  background-image: linear-gradient(red, rgb(0, 248, 227));
+  background-image: linear-gradient(red, rgb(36 39 41));
   color: white;
   padding: 10px;
   line-height: 1.6;
   word-break: break-word;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+video {
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
 }
 .welcome-screen {
   font-size: xx-large;
@@ -47,7 +77,7 @@ article {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 5px solid white;
 }
 .arabic {
@@ -93,8 +123,9 @@ button {
 .scroll-up {
   background-color: red;
   width: 20px;
+  height: 20px;
   border: 2px solid black;
-  border-radius: 50px;
+  border-radius: 15px;
   position: fixed;
   bottom: 10px;
   right: 20px;
@@ -104,4 +135,13 @@ button {
 .scroll-up:hover {
   background-color: aqua;
   cursor: pointer;
+}
+.first-p::first-letter {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  display: inline-block;
+  font: bold;
+}
+::selection {
+  background-color: red;
 }
