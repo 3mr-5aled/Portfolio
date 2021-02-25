@@ -1,8 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   display: grid;
   background-color: rgb(36, 39, 41);
   color: white;
-
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,7 +42,8 @@ header {
   z-index: 100;
   padding: none;
   /* Top  Right Bottom Left
-     10px 10px  10px   10px */
+    10px 10px  10px   10px */
+  box-shadow: 0px 6px 17px 0 black;
 }
 section {
   background-image: url("/Coding-background.jpeg");
@@ -103,7 +108,7 @@ video {
 }
 .logo {
   float: left;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
 }
 button {
@@ -145,3 +150,35 @@ button {
 ::selection {
   background-color: red;
 }
+.box1 {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background-color: red;
+  text-align: center;
+  float: left;
+  width: 13.3%;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 29px;
+  border-radius: 15px;
+  box-shadow: 10px 16px 11px -1px black;
+}
+.Skills {
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid green;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  transition: margin-left 0.5s ease;
+  cursor: pointer;
+}
+.Skills:hover {
+  margin-left: 20px;
+}
+/* 
+Content Widt Is :100%
+4 Spaces 15% * 4 => 60% From Content Width
+40% Available Space
+3 Elements The Width Is: 40% / 3 
+*/
