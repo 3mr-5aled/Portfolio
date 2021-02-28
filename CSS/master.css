@@ -25,13 +25,6 @@ hr {
   background-color: red;
   height: 1px;
 }
-/* .one::before {
-  content: url(/Logo.png);
-  float: left;
-  display: inline-block;
-  margin: 0;
-  postion:aboulte;
-} */
 header {
   background-image: linear-gradient(to right, var(--mainColor, white), red);
   color: var(--mainFontColor, black);
@@ -40,7 +33,6 @@ header {
   width: 100%;
   position: sticky;
   top: 0px;
-
   z-index: 100;
   padding: none;
   /* border-radius: 5px;
@@ -160,16 +152,14 @@ button {
 .box1 {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .box1 div {
   padding-top: 50px;
   padding-bottom: 150px;
   background-color: red;
   text-align: center;
-  width: calc(40% / 3);
-  margin-left: 15%;
-  margin-top: 10px;
-  margin-bottom: 29px;
+  width: calc(60% / 3);
   border-radius: 15px;
   box-shadow: 10px 16px 11px -1px black;
 }
