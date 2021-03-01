@@ -163,6 +163,31 @@ button {
   border-radius: 15px;
   box-shadow: 10px 16px 11px -1px black;
 }
+.B1 {
+  background-image: url(/Images/HTML-image.png);
+  background-position: center;
+}
+.B2 {
+  background-image: url(/Images/CSS-image.png);
+  background-repeat: round !important;
+}
+.B3 {
+  background-image: url(/Images/javascript-image.png);
+  background-position: center;
+}
+.B1,
+.B2,
+.B3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.B1:hover,
+.B2:hover,
+.B3:hover {
+  filter: grayscale(0);
+}
 .Skills {
   background-color: black;
   border-radius: 10px;
