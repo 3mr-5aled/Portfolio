@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.page {
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "logo logo logo nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont side side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+.logo {
+  grid-area: logo;
+}
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: cont;
+}
+aside {
+  grid-area: side;
+}

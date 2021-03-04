@@ -9,9 +9,6 @@
 }
 body {
   display: grid;
-  /* display: flex;
-  flex-direction: column;
-  flex-flow: row wrap; */
   padding: 10px;
   background-color: var(--mainColor, white);
   color: var(--mainFontColor, black);
@@ -28,10 +25,10 @@ hr {
   height: 1px;
 }
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
   background-image: linear-gradient(to right, var(--mainColor, white), red);
   color: var(--mainFontColor, black);
   padding: 0px 1%;
