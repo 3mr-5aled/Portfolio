@@ -91,20 +91,6 @@ section {
   margin: 10px;
   border-radius: 10px;
 }
-article {
-  background-image: linear-gradient(red, var(--mainColor, white));
-  color: white;
-  padding: 10px;
-  line-height: 1.6;
-  word-break: break-word;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-}
-video {
-  border-radius: 25px;
-  display: block;
-  margin: 0 auto;
-}
 .welcome-screen {
   font-size: xx-large;
   font-weight: bold;
@@ -119,6 +105,26 @@ video {
   border-radius: 10px;
   border: 5px solid white;
 }
+.welcome-screen:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+article {
+  background-image: linear-gradient(red, var(--mainColor, white));
+  color: white;
+  padding: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+video {
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
 .arabic {
   text-align: right;
   direction: rtl;
@@ -156,6 +162,10 @@ video {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.box1 div:hover {
+  transition: 0.3s;
+  transform: rotate(360deg);
 }
 .box1 div {
   padding-top: 50px;
