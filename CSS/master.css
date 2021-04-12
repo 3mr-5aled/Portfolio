@@ -29,7 +29,7 @@ header {
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, transparent, red);
+  background-image: linear-gradient(to right, var(--mainColor, white), red);
   color: var(--mainFontColor, black);
   padding: 0px 1%;
   box-shadow: 0px 6px 17px 0 black;
@@ -163,10 +163,7 @@ video {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.box1 div:hover {
-  transition: 0.3s;
-  transform: rotate(360deg);
-}
+
 .box1 div {
   padding-top: 50px;
   padding-bottom: 150px;
@@ -175,6 +172,10 @@ video {
   width: calc(60% / 3);
   border-radius: 15px;
   box-shadow: 10px 16px 11px -1px black;
+  transition: transform 1s;
+}
+.box1 div:hover {
+  transform: rotateZ(360deg) rotateY(360deg);
 }
 .B1 {
   background-image: url(/Images/HTML-image.png);
