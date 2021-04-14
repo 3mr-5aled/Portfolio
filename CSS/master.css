@@ -36,8 +36,11 @@ header {
   position: sticky;
   top: 0px;
 }
-.nav_list,
-.header_links,
+.logo {
+  cursor: pointer;
+}
+nav,
+nav li a,
 .cta {
   color: var(--mainFontColor, black);
   font-weight: 500;
@@ -45,18 +48,12 @@ header {
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.logo {
-  cursor: pointer;
-}
-.nav_links {
-  list-style: none;
-}
-.nav_list {
+nav li {
   display: inline-block;
+  list-style: none;
   padding: 0px 20px;
 }
-.header_links {
+nav li a {
   transition: all0.3s ease 0s;
   padding: 5px;
   background-color: transparent;
@@ -64,7 +61,7 @@ header {
   border-radius: 10px;
   transition: all 0.3s ease 0s;
 }
-.header_links:hover {
+nav li a:hover {
   background-color: black;
   color: white;
   border: 2px solid red;
@@ -91,7 +88,7 @@ section {
   margin: 10px;
   border-radius: 10px;
 }
-.welcome-screen {
+section p {
   font-size: xx-large;
   font-weight: bold;
   font-family: "Cairo", sans-serif;
@@ -106,7 +103,7 @@ section {
   border: 5px solid white;
   animation: color-changer 6s infinite;
 }
-.welcome-screen:hover {
+section p:hover {
   transform: scale(1.1) rotate(5deg);
   opacity: 0.8;
   transition: 0.3s;
@@ -178,13 +175,13 @@ video {
 ::selection {
   background-color: red;
 }
-.box1 {
+.cards {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.box1 div {
+.cards div {
   padding-top: 50px;
   padding-bottom: 150px;
   background-color: red;
@@ -194,35 +191,31 @@ video {
   box-shadow: 10px 16px 11px -1px black;
   transition: transform 1s;
 }
-.box1 div:hover {
+.cards div:hover {
   transform: rotateZ(360deg) rotateY(360deg);
 }
-.B1 {
+.cards div:nth-child(1) {
   background-image: url(/Images/HTML-image.png);
   background-position: center;
 }
-.B2 {
+.cards div:nth-child(2) {
   background-image: url(/Images/CSS-image.png);
   background-repeat: round !important;
 }
-.B3 {
+.cards div:nth-child(3) {
   background-image: url(/Images/javascript-image.png);
   background-position: center;
 }
-.B1,
-.B2,
-.B3 {
+.cards div {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
 }
 
-.B1:hover,
-.B2:hover,
-.B3:hover {
+.cards div:hover {
   filter: grayscale(0);
 }
-.Skills {
+article li {
   background-color: black;
   border-radius: 10px;
   border: 2px solid green;
@@ -232,7 +225,7 @@ video {
   transition: margin-left 0.5s ease;
   cursor: pointer;
 }
-.Skills:hover {
+article li:hover {
   margin-left: 20px;
 }
 .circle {
@@ -248,21 +241,21 @@ video {
   border-radius: 50%;
   animation: up-and-down 0.9s infinite linear alternate;
 }
-.circle .two {
+.circle div:nth-child(2) {
   animation-delay: 0.3s;
 }
-.circle .three {
+.circle :last-child {
   animation-delay: 0.6s;
 }
-/* Content Width Is :100%
-4 Spaces 15% * 4 => 60% From Content Width
-40% Available Space
-3 Elements The Width Is: 40% / 3 
-*/
-
 @keyframes up-and-down {
   to {
     opacity: 0.2;
     transform: translateY(-20px);
   }
 }
+
+/* Content Width Is :100%
+4 Spaces 15% * 4 => 60% From Content Width
+40% Available Space
+3 Elements The Width Is: 40% / 3 
+*/
