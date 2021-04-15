@@ -33,16 +33,23 @@ header {
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(0, 140, 255), rgb(255, 0, 0));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
   color: var(--mainFontColor, black);
   padding: 0px 1%;
   box-shadow: 0px 6px 17px 0 black;
   position: sticky;
   top: 0px;
+  z-index: 100;
 }
 .logo {
   cursor: pointer;
 }
+
 nav,
 nav li a,
 .cta {
@@ -131,21 +138,50 @@ section p:hover {
   }
 }
 article {
-  margin: 0 50px;
-  background-image: linear-gradient(to right bottom, #0000005c, #929292cc);
+  margin: 0 100px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(107, 107, 107, 0.7),
+    rgba(177, 177, 177, 0.3)
+  );
   color: white;
   padding: 10px;
   line-height: 1.6;
-  word-break: break-word;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10px;
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  z-index: 20;
 }
-video {
+.backcircle1,
+.backcircle2,
+.backcircle3 {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  background: linear-gradient(rgb(230, 64, 64), rgb(71, 227, 255));
+  position: absolute;
+  z-index: -100;
+}
+.backcircle1 {
+  top: 300px;
+  left: 10px;
+  transform: rotate(10deg);
+}
+.backcircle2 {
+  top: 800px;
+  right: 20px;
+  transform: rotate(350deg);
+}
+.backcircle3 {
+  top: 1200px;
+  left: 10px;
+  transform: rotate(10deg);
+}
+/* video {
   border-radius: 25px;
   display: block;
   margin: 0 auto;
-}
-
+} */
 .arabic {
   text-align: right;
   direction: rtl;
