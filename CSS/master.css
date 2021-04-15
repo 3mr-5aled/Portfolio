@@ -10,7 +10,11 @@
 body {
   display: grid;
   padding: 10px;
-  background-color: var(--mainColor, white);
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 140, 255),
+    rgb(255, 0, 0)
+  );
   color: var(--mainFontColor, black);
   margin: 0;
   padding: 0;
@@ -29,7 +33,7 @@ header {
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, var(--mainColor, white), red);
+  background-image: linear-gradient(to right, rgb(0, 140, 255), rgb(255, 0, 0));
   color: var(--mainFontColor, black);
   padding: 0px 1%;
   box-shadow: 0px 6px 17px 0 black;
@@ -62,14 +66,14 @@ nav li a {
   transition: all 0.3s ease 0s;
 }
 nav li a:hover {
-  background-color: black;
+  background-color: rgb(0, 140, 255);
   color: white;
   border: 2px solid red;
 }
 .contact_button {
   padding: 9px 25px;
   color: white;
-  background-color: rgb(36 39 41 / 100%);
+  background-color: rgb(0, 140, 255);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -79,7 +83,7 @@ nav li a:hover {
   background-color: rgb(36 39 41 / 80%);
   color: white;
 }
-section {
+/* section {
   background-image: url("/Images/Coding-background.jpeg");
   background-attachment: fixed;
   background-size: cover;
@@ -87,7 +91,7 @@ section {
   border: 5px solid white;
   margin: 10px;
   border-radius: 10px;
-}
+} */
 section p {
   font-size: xx-large;
   font-weight: bold;
@@ -128,7 +132,7 @@ section p:hover {
 }
 article {
   margin: 0 50px;
-  background-image: linear-gradient(red, transparent);
+  background-image: linear-gradient(to right bottom, #0000005c, #929292cc);
   color: white;
   padding: 10px;
   line-height: 1.6;
@@ -150,7 +154,7 @@ video {
 .clear {
   clear: both;
 }
-.scroll-up {
+/* .scroll-up {
   background-color: red;
   width: 20px;
   height: 20px;
@@ -165,6 +169,25 @@ video {
 .scroll-up:hover {
   background-color: aqua;
   cursor: pointer;
+} */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 25%; /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 .first-p::first-letter {
   font-family: "Times New Roman", Times, serif;
@@ -176,12 +199,13 @@ video {
   background-color: red;
 }
 .cards {
+  margin: 50px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.cards div {
+.cards a {
   padding-top: 50px;
   padding-bottom: 150px;
   background-color: red;
@@ -191,34 +215,34 @@ video {
   box-shadow: 10px 16px 11px -1px black;
   transition: transform 1s;
 }
-.cards div:hover {
+.cards a:hover {
   transform: rotateZ(360deg) rotateY(360deg);
 }
-.cards div:nth-child(1) {
+.cards a:nth-child(1) {
   background-image: url(/Images/HTML-image.png);
   background-position: center;
 }
-.cards div:nth-child(2) {
+.cards a:nth-child(2) {
   background-image: url(/Images/CSS-image.png);
   background-repeat: round !important;
 }
-.cards div:nth-child(3) {
+.cards a:nth-child(3) {
   background-image: url(/Images/javascript-image.png);
   background-position: center;
 }
-.cards div {
+.cards a {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
 }
 
-.cards div:hover {
+.cards a:hover {
   filter: grayscale(0);
 }
 article li {
-  background-color: black;
+  background-color: rgb(0, 140, 255);
   border-radius: 10px;
-  border: 2px solid green;
+  border: 2px solid red;
   width: fit-content;
   padding: 5px;
   margin: 5px;
@@ -252,6 +276,27 @@ article li:hover {
     opacity: 0.2;
     transform: translateY(-20px);
   }
+}
+.social {
+  /* position: absolute; */
+  /* z-index: 10; */
+  /* bottom: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
 }
 
 /* Content Width Is :100%
