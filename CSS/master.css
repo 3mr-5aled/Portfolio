@@ -1,6 +1,7 @@
 :root {
-  --mainColor: rgb(36, 39, 41);
   --mainFontColor: white;
+  --mainGradient1: rgba(0, 0, 0, 0.7);
+  --mainGradient2: rgba(0, 0, 0, 0.3);
 }
 * {
   -webkit-box-sizing: border-box;
@@ -35,8 +36,8 @@ header {
   align-items: center;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    var(--mainGradient1, rgba(255, 255, 255, 0.7)),
+    var(--mainGradient1, rgba(255, 255, 255, 0.3))
   );
   backdrop-filter: blur(2rem);
   color: var(--mainFontColor, black);
@@ -48,11 +49,12 @@ header {
 }
 .logo {
   cursor: pointer;
+  width: 100px;
+  height: 100px;
 }
 
 nav,
-nav li a,
-.cta {
+nav li a {
   color: var(--mainFontColor, black);
   font-weight: 500;
   font-size: 16px;
@@ -137,12 +139,44 @@ section p:hover {
     background-color: green;
   }
 }
+.backcircle1,
+.backcircle2,
+.backcircle3 {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  position: absolute;
+  z-index: -100;
+  box-shadow: inset -2px -2px 20px 0px black;
+}
+.backcircle1 {
+  top: 300px;
+  left: 10px;
+  transform: rotate(10deg);
+  background: linear-gradient(
+    to right bottom,
+    rgb(230, 64, 64),
+    rgb(71, 227, 255)
+  );
+}
+.backcircle2 {
+  top: 800px;
+  right: 20px;
+  transform: rotate(350deg);
+  background: linear-gradient(to top, rgb(230, 64, 64), rgb(71, 227, 255));
+}
+.backcircle3 {
+  top: 1200px;
+  left: 10px;
+  transform: rotate(10deg);
+  background: linear-gradient(rgb(230, 64, 64), rgb(71, 227, 255));
+}
 article {
   margin: 0 100px;
   background: linear-gradient(
     to right bottom,
-    rgba(107, 107, 107, 0.7),
-    rgba(177, 177, 177, 0.3)
+    var(--mainGradient1, rgba(255, 255, 255, 0.7)),
+    var(--mainGradient1, rgba(255, 255, 255, 0.3))
   );
   color: white;
   padding: 10px;
@@ -151,32 +185,22 @@ article {
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
   z-index: 20;
+  box-shadow: inset -2px -2px 20px 0px black;
 }
-.backcircle1,
-.backcircle2,
-.backcircle3 {
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
-  background: linear-gradient(rgb(230, 64, 64), rgb(71, 227, 255));
-  position: absolute;
-  z-index: -100;
+article li {
+  background-color: rgb(0, 140, 255);
+  border-radius: 10px;
+  border: 2px solid red;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  transition: margin-left 0.5s ease;
+  cursor: pointer;
 }
-.backcircle1 {
-  top: 300px;
-  left: 10px;
-  transform: rotate(10deg);
+article li:hover {
+  margin-left: 20px;
 }
-.backcircle2 {
-  top: 800px;
-  right: 20px;
-  transform: rotate(350deg);
-}
-.backcircle3 {
-  top: 1200px;
-  left: 10px;
-  transform: rotate(10deg);
-}
+
 /* video {
   border-radius: 25px;
   display: block;
@@ -187,9 +211,9 @@ article {
   direction: rtl;
   letter-spacing: 0;
 }
-.clear {
+/* .clear {
   clear: both;
-}
+} */
 /* .scroll-up {
   background-color: red;
   width: 20px;
@@ -237,19 +261,24 @@ article {
 .cards {
   margin: 50px 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .cards a {
   padding-top: 50px;
   padding-bottom: 150px;
   background-color: red;
   text-align: center;
-  width: calc(60% / 3);
+  /* width: calc(60% / 3); */
+  width: 250px;
+  height: 250px;
   border-radius: 15px;
   box-shadow: 10px 16px 11px -1px black;
   transition: transform 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  margin: 25px 0;
 }
 .cards a:hover {
   transform: rotateZ(360deg) rotateY(360deg);
@@ -266,34 +295,20 @@ article {
   background-image: url(/Images/javascript-image.png);
   background-position: center;
 }
-.cards a {
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(100%);
+.cards a:nth-child(4) {
+  background-image: url(/Images/Python-image.png);
+  background-position: center;
 }
-
 .cards a:hover {
   filter: grayscale(0);
 }
-article li {
-  background-color: rgb(0, 140, 255);
-  border-radius: 10px;
-  border: 2px solid red;
-  width: fit-content;
-  padding: 5px;
-  margin: 5px;
-  transition: margin-left 0.5s ease;
-  cursor: pointer;
-}
-article li:hover {
-  margin-left: 20px;
-}
-.circle {
+
+.load {
   display: flex;
   justify-content: center;
   margin: 50px auto;
 }
-.circle div {
+.load div {
   margin: 0 5px;
   width: 20px;
   height: 20px;
@@ -301,10 +316,10 @@ article li:hover {
   border-radius: 50%;
   animation: up-and-down 0.9s infinite linear alternate;
 }
-.circle div:nth-child(2) {
+.load div:nth-child(2) {
   animation-delay: 0.3s;
 }
-.circle :last-child {
+.load :last-child {
   animation-delay: 0.6s;
 }
 @keyframes up-and-down {
@@ -340,3 +355,19 @@ article li:hover {
 40% Available Space
 3 Elements The Width Is: 40% / 3 
 */
+@media print {
+  .load {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  article {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .cards a {
+    filter: grayscale(0);
+  }
+  header {
+  }
+}
