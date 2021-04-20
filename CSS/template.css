@@ -147,7 +147,7 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(../images/landing.jpg);
+  background-image: url(/Images/Coding.jpg);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -170,6 +170,7 @@ body {
 .landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
+  color: #fff;
 }
 /* End Landing Section */
 /* Start Features */
@@ -276,6 +277,7 @@ body {
 }
 .portfolio .portfolio-content .card img {
   max-width: 100%;
+  border: solid 1px black;
 }
 .portfolio .portfolio-content .card .info {
   padding: 20px;
