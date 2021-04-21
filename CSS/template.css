@@ -147,12 +147,13 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-  background-image: url(/Images/Coding.jpg);
+  background-image: url(/Images/Landing.jpg);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
 }
 .landing .intro-text {
+  background-color: #10cab7;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -160,17 +161,17 @@ body {
   transform: translate(-50%, -50%);
   width: 320px;
   max-width: 100%;
+  border-radius: 25px;
 }
 .landing .intro-text h1 {
   margin: 0;
   font-weight: bold;
   font-size: 50px;
-  color: var(--main-color);
+  color: whitesmoke;
 }
 .landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
-  color: #fff;
 }
 /* End Landing Section */
 /* Start Features */
@@ -309,13 +310,15 @@ body {
   }
 }
 .about .about-content .image {
+  /* margin-top: inherit; */
   position: relative;
   width: 250px;
-  height: 375px;
+  height: 250px;
 }
+
 @media (max-width: 991px) {
   .about .about-content .image {
-    margin: 0 auto 60px;
+    margin: 0 auto 20px;
   }
 }
 .about .about-content .image::before {
@@ -333,11 +336,11 @@ body {
   content: "";
   position: absolute;
   width: 120px;
-  height: 300px;
+  height: 250px;
   border-left: 80px solid var(--main-color);
   border-bottom: 80px solid var(--main-color);
   z-index: -1;
-  right: -150px;
+  right: -130px;
 }
 @media (max-width: 991px) {
   .about .about-content .image::before,
