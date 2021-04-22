@@ -332,19 +332,25 @@ article h1 {
   cursor: pointer;
 } */
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 25%; /* Rounded corners */
-  font-size: 25px; /* Increase font size */
+  /* display: none; Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 211, 158);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
 }
 
 #myBtn:hover {
@@ -511,4 +517,58 @@ article h1 {
   .container {
     width: 1170px;
   }
+}
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project .content img {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/* .project .content .info::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 10px;
+  border-color: red green yellow blue;
+  z-index: 50;
+} */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-color: #00ff95;
+  border-radius: 10px;
+  height: 200px;
+  padding: 10px;
+}
+.content .info h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  z-index: 2;
+  position: absolute;
+  left: 0;
 }
