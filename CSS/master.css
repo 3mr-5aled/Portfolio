@@ -56,6 +56,7 @@ header {
   width: 100px;
   height: 100px;
 }
+
 nav li a {
   color: var(--mainFontColor, black);
   font-weight: 500;
@@ -305,6 +306,13 @@ article h1 {
   max-width: max-content;
   justify-self: center;
 }
+article h2 {
+  padding: 20px;
+}
+.info-p {
+  line-height: 1.9;
+  font-size: 20px;
+}
 /* video {
   border-radius: 25px;
   display: block;
@@ -449,20 +457,34 @@ i .fas .fa-arrow-up {
   justify-content: center;
   align-items: center;
 }
+.social-container ul {
+  padding-left: 10px;
+  list-style-type: none;
+}
 .social li {
   list-style: none;
 }
 .social li a {
+  color: white;
   display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
+  margin-right: 10px;
   transform: scale(0.5);
   transition: 0.5s;
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
-
+.social-container p {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+}
+.social-container {
+  background-image: linear-gradient(to bottom, #00ff95, rgb(59, 183, 255));
+  border-radius: 10px;
+  width: fit-content;
+}
 /* Content Width Is :100%
 4 Spaces 15% * 4 => 60% From Content Width
 40% Available Space
@@ -562,19 +584,33 @@ i .fas .fa-arrow-up {
   text-align: center;
   background-color: #00ff95;
   border-radius: 10px;
-  height: 200px;
+  max-height: 250px;
   padding: 10px;
 }
 .content .info h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-footer {
+
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
+
   background-color: red;
   z-index: 2;
   position: absolute;
   left: 0;
+  height: 50px;
+  font-weight: 800;
+}
+footer span {
+  color: #00ff95;
 }
