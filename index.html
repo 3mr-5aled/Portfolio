@@ -26,9 +26,12 @@
       <img class="logo" src="/Images/Logo.png" alt="Logo">
         <nav>
           <ul>
-            <li><a href="/index.html">Home</a></li>
+            <!-- <li><a href="/index.html">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Projects</a></li> -->
+          <button id="pages" data-page="page1">Home</button>
+          <button id="pages" data-page="page2">About</button>
+          <button id="pages" data-page="page3">Projects</button>
             <!-- <p class="clear"></p> -->
           </ul>
         </nav>
@@ -45,11 +48,14 @@
       </label>
       <input type="checkbox" id="mycheckbox">
       <div class="menu-nav">
-        <ul>
-            <li class="m-nav-items"><a class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
-            <li class="m-nav-items"><a class="m-nav-links" href="#about">About</a></li>
-            <li class="m-nav-items"><a class="m-nav-links" href="#projects" target="_blank">Projects</a></li>
-            <a href="mailto:name@email.com"><button class="contact_button">Contact</button></a>
+        <ul class="m-nav-items">
+          <button id="pages" class="m-nav-button" data-page="page1">Home</button>
+          <button id="pages" class="m-nav-button" data-page="page2">About</button>
+          <button id="pages" class="m-nav-button" data-page="page3">Projects</button>
+            <!-- <li class="m-nav-items"><a data-page="page1" class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
+            <li class="m-nav-items"><a data-page="page2" class="m-nav-links" href="#about">About</a></li>
+            <li class="m-nav-items"><a data-page="page3" class="m-nav-links" href="#projects" target="_blank">Projects</a></li> -->
+            <a href="mailto:name@email.com"><button class="m-contact-button">Contact</button></a>
         </ul>
       </div>
     </m-header>
@@ -64,7 +70,9 @@
         <div class="backcircle3"></div>
       </div>
       <article>  
-        <h1>Hello</h1>
+        <!-- welcome page -->
+        <div id ="page1">
+          <h1>Hello</h1>
             <h2>Who am i</h2>
             <p class="arabic">أهلا بكم في موقعي انا عمرو خالد </p>
             <p class="info-p">This is Morosoft {the useful company} this is a Tech company <br> which was stablished in 2021</p>
@@ -78,7 +86,9 @@
                 </ul>
               <li>Creating</li> 
             </ol>
-            <div id="about"></div>
+        </div>
+        <!-- about section -->
+        <div id="page2">
             <h1>About</h1>
             <p class="first-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
@@ -95,7 +105,9 @@
               <source src="">
             </video> -->
             <hr>
-            <div id="projects"></div>
+          </div>
+            <!-- Projects section -->
+          <div id="page3">
             <h1>Projects</h1>
             <!-- Start Portfolio -->
           <div class="project">
@@ -121,8 +133,8 @@
               </div>
             </div>
           </div>
-      <!-- End Portfolio -->
-            <hr class="footer">
+          <!-- End Portfolio -->
+          <!-- <div id="page4"> -->
             <h1>Programming langages I learnt</h1>
             <div class="cards">
               <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"></a>
@@ -130,6 +142,8 @@
               <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"></a>
               <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"></a>
             </div>
+          <!-- </div> -->
+        </div>
       </article>
       <!-- <aside>
         Sidebar
