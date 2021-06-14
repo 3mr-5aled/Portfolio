@@ -23,7 +23,7 @@ body {
     var(--mainGradient3, blue),
     var(--mainGradient4, red)
   );
-  color: var(--mainFontColor, black);
+  color: var(--mainFontColor, black );
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -435,6 +435,9 @@ article div li:hover {
   border: 1px solid black;
   border-radius: 10px;
 }
+#page3 > div.project > div:nth-child(3) > div > h3 {
+  font-size: 17px;
+}
 .content {
   flex-direction: column;
 }
@@ -507,7 +510,7 @@ article div li:hover {
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
-  margin: 25px 0;
+  margin: 25px 10px;
 }
 .cards a:hover {
   transform: rotateZ(360deg) rotateY(360deg);
