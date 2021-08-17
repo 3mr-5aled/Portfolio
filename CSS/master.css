@@ -13,9 +13,13 @@
   box-sizing: border-box;
 }
 html {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 body {
+  height: 100%;
+  margin: 0;
   display: grid;
   padding: 10px;
   background-image: linear-gradient(
@@ -31,6 +35,7 @@ body {
   scrollbar-width: auto;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
   overflow-x: hidden !important;
+  user-select: none;
 }
 body::-webkit-scrollbar {
   width: 11px;
@@ -121,14 +126,14 @@ nav button {
   padding: 8px;
   margin: 5px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 3px solid white;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
 }
 nav button:hover {
   background-color: var(--mainGradient3, blue);
-  color: white;
-  border: 2px solid red;
+  /* color: white; */
+  border: 2.5px solid red;
 }
 .contact_button {
   padding: 9px 25px;
@@ -138,12 +143,18 @@ nav button:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  user-select: none;
 }
 .contact_button:hover {
   background-color: rgb(36 39 41 / 80%);
   color: white;
 }
-
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 /* section {
   background-image: url("/Images/Coding-background.jpeg");
   background-attachment: fixed;
@@ -639,3 +650,4 @@ footer span {
     display: none;
   }
 }
+/* Style the tab content (and add height:100% for full page content) */

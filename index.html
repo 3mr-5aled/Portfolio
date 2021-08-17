@@ -22,18 +22,20 @@
   <!-- <div class="scroll-up">^</div> -->
   <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
   <span class="up"><i class="fas fa-arrow-up"></i></span>
-	<script src="/js/script.js"></script>
-    <header>
-      <img class="logo" src="/Images/Logo.png" alt="Logo">
+  <header>
+    <img class="logo" src="/Images/Logo.png" alt="Logo">
         <nav>
           <ul>
             <!-- <li><a href="/index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li> -->
-          <button id="pages" data-page="page1">Home</button>
-          <button id="pages" data-page="page2">About</button>
-          <button id="pages" data-page="page3">Projects</button>
-            <!-- <p class="clear"></p> -->
+          <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen" >Home</button>
+          <button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+          <button class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
+          <!-- <button id="pages" data-page="page1">Home</button> -->
+          <!-- <button id="pages" data-page="page2">About</button> -->
+          <!-- <button id="pages" data-page="page3">Projects</button> -->
+          <!-- <p class="clear"></p> -->
           </ul>
         </nav>
       <a href="mailto:name@email.com"><button class="contact_button">Contact</button></a>
@@ -54,7 +56,7 @@
           <button id="pages" class="m-nav-button" data-page="page2">About</button>
           <button id="pages" class="m-nav-button" data-page="page3">Projects</button>
             <!-- <li class="m-nav-items"><a data-page="page1" class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
-            <li class="m-nav-items"><a data-page="page2" class="m-nav-links" href="#about">About</a></li>
+              <li class="m-nav-items"><a data-page="page2" class="m-nav-links" href="#about">About</a></li>
             <li class="m-nav-items"><a data-page="page3" class="m-nav-links" href="#projects" target="_blank">Projects</a></li> -->
             <a href="mailto:name@email.com"><button class="m-contact-button">Contact</button></a>
         </ul>
@@ -72,7 +74,7 @@
       </div> -->
       <article>  
         <!-- welcome page -->
-        <div id ="page1">
+        <div id ="Home" class="tabcontent">
           <h1>Hello</h1>
             <h2>Who am i</h2>
             <p class="arabic">أهلا بكم في موقعي انا عمرو خالد </p>
@@ -89,7 +91,7 @@
             </ol>
         </div>
         <!-- about section -->
-        <div id="page2">
+        <div id="About" class="tabcontent">
             <h1>About</h1>
             <p class="first-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
@@ -108,7 +110,7 @@
             <hr>
           </div>
             <!-- Projects section -->
-          <div id="page3">
+          <div id="Projects" class="tabcontent">
             <h1>Projects</h1>
             <!-- Start Portfolio -->
           <div class="project">
@@ -154,7 +156,7 @@
         <div></div>
         <div></div>
       </div>
-        <br>
+      <br>
       <div class="flex">
         <div class="social-container"> 
           <ul class="social">
@@ -169,5 +171,7 @@
     <footer>
       <div> &copy; 2021 <span>Morosoft</span> All Right Reserved</div>
     </footer>
+    
+    <script src="/js/script.js"></script>
 </body>
 </html>
