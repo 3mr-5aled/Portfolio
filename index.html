@@ -52,9 +52,12 @@
       <input type="checkbox" id="mycheckbox">
       <div class="menu-nav">
         <ul class="m-nav-items">
-          <button id="pages" class="m-nav-button" data-page="page1">Home</button>
+          <!-- <button id="pages" class="m-nav-button" data-page="page1">Home</button>
           <button id="pages" class="m-nav-button" data-page="page2">About</button>
-          <button id="pages" class="m-nav-button" data-page="page3">Projects</button>
+          <button id="pages" class="m-nav-button" data-page="page3">Projects</button> -->
+          <button class="m-nav-button" class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen" >Home</button>
+          <button class="m-nav-button" class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+          <button class="m-nav-button" class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
             <!-- <li class="m-nav-items"><a data-page="page1" class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
               <li class="m-nav-items"><a data-page="page2" class="m-nav-links" href="#about">About</a></li>
             <li class="m-nav-items"><a data-page="page3" class="m-nav-links" href="#projects" target="_blank">Projects</a></li> -->

@@ -166,7 +166,7 @@ m-header {
     to right bottom,
     var(--mainGradient1, rgba(255, 255, 255, 0.7)),
     var(--mainGradient1, rgba(255, 255, 255, 0.3))
-    );
+  );
   backdrop-filter: blur(2rem);
   color: var(--mainFontColor, black);
   padding: 0px 1%;
@@ -188,7 +188,7 @@ m-header {
     to right bottom,
     var(--mainGradient1, rgba(255, 255, 255, 0.7)),
     var(--mainGradient1, rgba(255, 255, 255, 0.3))
-    );
+  );
   top: 6.5rem;
   z-index: 99;
   display: flex;
@@ -372,8 +372,8 @@ article {
     to right bottom,
     var(--mainGradient1, rgba(255, 255, 255, 0.7)),
     var(--mainGradient1, rgba(255, 255, 255, 0.3))
-    );
-    color: white;
+  );
+  color: white;
   padding: 0px;
   line-height: 1.6;
   font-family: "Cairo", Arial, Helvetica, sans-serif;
