@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Morosoft</title>
-	<!-- this is website description which appears in search engine -->
-	<meta name="description" content="Morosoft Website Student-Developer-Designer"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morosoft</title>
+  <!-- this is website description which appears in search engine -->
+  <meta name="description" content="Morosoft Website Student-Developer-Designer" />
   <!-- Image icon -->
-  <link rel="shortcut icon" type="/Images/icon" href="/Images/favicon.ICO"/>
+  <link rel="shortcut icon" type="/Images/icon" href="/Images/favicon.ICO" />
   <!-- main CSS -->
-	<link rel="stylesheet" href="/CSS/master.css"  type="text/css" />
+  <link rel="stylesheet" href="/CSS/master.css" type="text/css" />
   <!-- Render all Elements Normaly -->
   <link rel="stylesheet" href="/CSS/normalize.css">
   <!-- Font Awesome -->
@@ -18,140 +19,151 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- <div class="scroll-up">^</div> -->
   <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
   <span class="up"><i class="fas fa-arrow-up"></i></span>
   <header>
     <a href="/index.html"><img class="logo" src="/Images/Logo.png" alt="Logo"></a>
-        <nav>
-          <ul>
-            <!-- <li><a href="/index.html">Home</a></li>
+    <nav>
+      <ul>
+        <!-- <li><a href="/index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li> -->
-          <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen" >Home</button>
-          <button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
-          <button class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
-          <!-- <button id="pages" data-page="page1">Home</button> -->
-          <!-- <button id="pages" data-page="page2">About</button> -->
-          <!-- <button id="pages" data-page="page3">Projects</button> -->
-          <!-- <p class="clear"></p> -->
-          </ul>
-        </nav>
-      <a href="mailto:name@email.com"><button class="contact_button">Contact</button></a>
-    </header>
-    <m-header>
-      <img class="logo" src="/Images/Logo.png" alt="Logo">
-      <label for="mycheckbox" class="menu-toggler">
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </label>
-      <input type="checkbox" id="mycheckbox">
-      <div class="menu-nav">
-        <ul class="m-nav-items">
-          <!-- <button id="pages" class="m-nav-button" data-page="page1">Home</button>
+        <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+        <button class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
+        <!-- <button id="pages" data-page="page1">Home</button> -->
+        <!-- <button id="pages" data-page="page2">About</button> -->
+        <!-- <button id="pages" data-page="page3">Projects</button> -->
+        <!-- <p class="clear"></p> -->
+      </ul>
+    </nav>
+    <a href="mailto:name@email.com"><button class="contact_button">Contact</button></a>
+  </header>
+  <m-header>
+    <img class="logo" src="/Images/Logo.png" alt="Logo">
+    <label for="mycheckbox" class="menu-toggler">
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+    <input type="checkbox" id="mycheckbox">
+    <div class="menu-nav">
+      <ul class="m-nav-items">
+        <!-- <button id="pages" class="m-nav-button" data-page="page1">Home</button>
           <button id="pages" class="m-nav-button" data-page="page2">About</button>
           <button id="pages" class="m-nav-button" data-page="page3">Projects</button> -->
-          <button class="m-nav-button" class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen" >Home</button>
-          <button class="m-nav-button" class="tablink" onclick="openPage('About', this, 'blue')">About</button>
-          <button class="m-nav-button" class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
-            <!-- <li class="m-nav-items"><a data-page="page1" class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
+        <button class="m-nav-button" class="tablink" onclick="openPage('Home', this, 'red')"
+          id="defaultOpen">Home</button>
+        <button class="m-nav-button" class="tablink" onclick="openPage('About', this, 'blue')">About</button>
+        <button class="m-nav-button" class="tablink" onclick="openPage('Projects', this, 'green')">Projects</button>
+        <!-- <li class="m-nav-items"><a data-page="page1" class="m-nav-links" href="/index.html" target="_blank">Home</a></li>
               <li class="m-nav-items"><a data-page="page2" class="m-nav-links" href="#about">About</a></li>
             <li class="m-nav-items"><a data-page="page3" class="m-nav-links" href="#projects" target="_blank">Projects</a></li> -->
-            <a href="mailto:name@email.com"><button class="m-contact-button">Contact</button></a>
-        </ul>
-      </div>
-    </m-header>
-    <div class="container">
-      <section>
-        <p>Welcome To My Website</p>
-      </section>
-      <hr>
-      <!-- <div>
+        <a href="mailto:name@email.com"><button class="m-contact-button">Contact</button></a>
+      </ul>
+    </div>
+  </m-header>
+  <div class="container">
+    <section>
+      <p>Welcome To My Website</p>
+    </section>
+    <hr>
+    <!-- <div>
         <div class="backcircle1"></div>
         <div class="backcircle2"></div>
         <div class="backcircle3"></div>
       </div> -->
-      <article>  
-        <!-- welcome page -->
-        <div id ="Home" class="tabcontent">
-          <h1>Hello</h1>
-            <h2>Who am i</h2>
-            <p class="arabic">أهلا بكم في موقعي انا عمرو خالد </p>
-            <p class="info-p">This is Morosoft {the useful company} this is a Tech company <br> which was stablished in 2021</p>
-            <h1>Skills</h1>
-            <ol>
-              <li>Photo Editing</li>
-              <li>Programming</li>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ul>
-              <li>Creating</li> 
-            </ol>
-        </div>
-        <!-- about section -->
-        <div id="About" class="tabcontent">
-            <h1>About</h1>
-            <p class="first-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-            <p id="p_link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
-              <!-- <iframe width="640" height="360" title="Youtube video"
+    <article>
+      <!-- welcome page -->
+      <div id="Home" class="tabcontent">
+        <h1>Hello</h1>
+        <h2>Who am i</h2>
+        <p class="arabic">أهلا بكم في موقعي انا عمرو خالد </p>
+        <p class="info-p">This is Morosoft {the useful company} this is a Tech company <br> which was stablished in 2021
+        </p>
+        <h1>Skills</h1>
+        <ol>
+          <li>Photo Editing</li>
+          <li>Programming</li>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <li>Creating</li>
+        </ol>
+      </div>
+      <!-- about section -->
+      <div id="About" class="tabcontent">
+        <h1>About</h1>
+        <p class="first-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos,
+          neque, mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore
+          aliquid!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut
+          obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
+        <p id="p_link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque,
+          mollitia aut obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore
+          aliquid!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut
+          obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut
+          obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel error quasi aperiam quos, neque, mollitia aut
+          obcaecati quae esse fugit recusandae quod quo cum est consectetur accusantium porro labore aliquid!</p>
+        <!-- <iframe width="640" height="360" title="Youtube video"
                 src="https://r3---sn-hgn7yn7l.c.drive.google.com/videoplayback?expire=1613838998&ei=VgIxYKbGJerU8gTIq6HQDQ&ip=2001:16a2:8c81:9454:31e4:dcbe:f4e2:b6dc&cp=QVRGVUlfV1lXSVhPOkRHOFNweHd1N2lscTB6aE1jQmlhM2RGSlR4cUloaWFhYVFjVkdhaktwclg&id=06e679aaa15cea9b&itag=18&source=webdrive&requiressl=yes&mh=Kr&mm=32&mn=sn-hgn7yn7l&ms=su&mv=m&mvi=3&pl=39&usequic=no&ttl=transient&susc=dr&driveid=12poqFeSTUELnYFJXKHkDkHdyybX9mg10&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=5.479&lmt=1609267806598516&mt=1613824339&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAMDn4Sg5XjTarv1ufOl2ScLGYascG183FgYZnmMC7UOJAiEA3EJ5NSt9BZc9s5hAd9AgKRVgXF8Ee8iswmFPI919pH4=&lsparams=mh,mm,mn,ms,mv,mvi,pl,usequic&lsig=AG3C_xAwRQIgOxlwfgndqpY1cP9mrpJ1prhJwJF9W44TgK4nIyvwdasCIQCSqEjIV6NfPXRfZVdEcZUe7JFZ6nW_Ctddgs-Jxw6z9w==&cpn=GW_DOgoY_rJN6cCa&c=WEB_EMBEDDED_PLAYER&cver=1.20210217.1.0">
               </iframe> -->
-            <!-- <hr>
+        <!-- <hr>
             <video controls width="700" height="400" autoplay poster="/intro.mp4">
               <source src="/Videos/intro.mp4">
               <source src="">
             </video> -->
-            <hr>
-          </div>
-            <!-- Projects section -->
-          <div id="Projects" class="tabcontent">
-            <h1>Projects</h1>
-            <!-- Start Portfolio -->
-          <div class="project">
-            <div class="content flex">
-              <img src="/Images/Animal_card.jpg" alt="" />
-              <div class="info flex">
-                <h3>🦁Animal Card</h3>
-                <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-              </div>
-            </div>
-            <div class="content flex">
-              <img src="/Images/python_login.jpg" alt="" />
-              <div class="info flex">
-                <h3>🔑Python login system</h3>
-                <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-              </div>
-            </div>
-            <div class="content flex">
-              <img src="/Images/stream_format_python_pytube.jpg" alt="" />
-              <div class="info flex">
-                <h3>📼Python Youtube downloader</h3>
-                <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-              </div>
+        <hr>
+      </div>
+      <!-- Projects section -->
+      <div id="Projects" class="tabcontent">
+        <h1>Projects</h1>
+        <!-- Start Portfolio -->
+        <div class="project">
+          <div class="content flex">
+            <img src="/Images/Animal_card.jpg" alt="" />
+            <div class="info flex">
+              <h3>🦁Animal Card</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
             </div>
           </div>
-          <!-- End Portfolio -->
-          <!-- <div id="page4"> -->
-            <h1>Programming langages I learnt</h1>
-            <div class="cards">
-              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"></a>
-              <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"></a></a>
-              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"></a>
-              <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"></a>
+          <div class="content flex">
+            <img src="/Images/python_login.jpg" alt="" />
+            <div class="info flex">
+              <h3>🔑Python login system</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
             </div>
-          <!-- </div> -->
+          </div>
+          <div class="content flex">
+            <img src="/Images/stream_format_python_pytube.jpg" alt="" />
+            <div class="info flex">
+              <h3>📼Python Youtube downloader</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+            </div>
+          </div>
         </div>
-      </article>
-      <!-- <aside>
+        <!-- End Portfolio -->
+        <!-- <div id="page4"> -->
+        <h1>Programming langages I learnt</h1>
+        <div class="cards">
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"></a>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"></a></a>
+          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"></a>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"></a>
+        </div>
+        <!-- </div> -->
+      </div>
+    </article>
+    <!-- <aside>
         Sidebar
       </aside> -->
     <div class="loader-wrapper">
@@ -161,22 +173,27 @@
         <div></div>
       </div>
     </div>
-      <br>
-      <div class="flex">
-        <div class="social-container"> 
-          <ul class="social">
-            <p>Follow me on : </p>
-            <li><a href="https://www.facebook.com/profile.php?id=100051928551808"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-            <li><a href="https://twitter.com/MoroAmr1515"><i class="fab fa-twitter fa-3x"></i></a></li>
-          </ul>
-        </div>
+    <br>
+    <div class="flex">
+      <div class="social-container">
+        <ul class="social">
+          <p>Follow me on : </p>
+          <li><a target="_blank" href="https://www.facebook.com/MoroElkhateer/"><i
+                class="fab fa-facebook-f fa-3x"></i></a></li>
+          <li><a target="_blank" href="https://twitter.com/MoroAmr1515"><i class="fab fa-twitter fa-3x"></i></a></li>
+          <li><a target="_blank" href="https://github.com/Amr1515"><i class="fab fa-github fa-3x"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/amr1515/"><i class="fab fa-linkedin fa-3x"></i></a>
+          </li>
+        </ul>
       </div>
-      <br>
     </div>
-    <footer>
-      <div> &copy; 2021 <span>Morosoft</span> All Right Reserved</div>
-    </footer>
-    
-    <script src="/js/script.js"></script>
+    <br>
+  </div>
+  <footer>
+    <div> &copy; 2021 <span>Morosoft</span> All Right Reserved</div>
+  </footer>
+
+  <script src="/js/script.js"></script>
 </body>
+
 </html>
