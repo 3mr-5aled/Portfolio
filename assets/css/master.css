@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   display: grid;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to top right,
     var(--mainGradient3, blue),
     var(--mainGradient4, red)
