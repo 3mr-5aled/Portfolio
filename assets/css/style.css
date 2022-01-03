@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 200px;
+  /* padding: 10px 150px; */
 }
 
 .logo {
@@ -28,8 +29,8 @@ header {
 }
 
 #logoimage {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
 }
 header div {
   display: flex;
@@ -57,7 +58,11 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(/assets/images/landing2.png) no-repeat;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  /* background: url(/assets/images/landing2.png) no-repeat; */
+  background: linear-gradient(90deg, rgb(0, 0, 0), cyan);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -104,11 +109,21 @@ section {
   background-color: #0a49f6;
   transform: scale(1.1);
 }
-
+.facelogo {
+  border-radius: 50%;
+  margin-top: 25px;
+}
 .social-icons a {
   color: #fff;
   font-size: 1.7em;
   padding-right: 30px;
+}
+.social-icons a i {
+  transition: all 0.5s ease-in-out;
+}
+.social-icons a i:hover {
+  transform: translate(0px, -10px);
+  transition: all 0.5s ease-in;
 }
 
 .title {
