@@ -24,7 +24,7 @@ header {
 
 .logo {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
@@ -45,7 +45,9 @@ header div {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  list-style: none;
 }
+
 .navigation a {
   background-color: white;
   border-radius: 10px;
@@ -60,7 +62,7 @@ header div {
 
 .logo:hover,
 .navigation a:hover {
-  color: #000000;
+  color: white;
 }
 .navigation a:hover {
   background-color: #000000;
