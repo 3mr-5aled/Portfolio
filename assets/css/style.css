@@ -164,8 +164,23 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.cards {
-  background: linear-gradient(0deg, #00aeff, #00ff73);
+.card {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)
+  );
+  color: #fff;
+  min-width: 21.25em;
+  box-shadow: -7px 7px 25px rgb(1 1 1 / 73%);
+  backdrop-filter: blur(5rem);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.about {
+  background: linear-gradient(0deg, #a6ff00, #0011ff);
   /* background-color: #00ffa3; */
   /* opacity: 0.9;
   background-image: radial-gradient(circle at center center, #45c8f7, #00ffa3),
@@ -179,20 +194,13 @@ section {
     );
   background-blend-mode: multiply; */
 }
-.card {
-  background: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.5)
-  );
-  color: #fff;
-  width: 21.25em;
-  box-shadow: -7px 7px 25px rgb(1 1 1 / 73%);
-  backdrop-filter: blur(5rem);
-  border-radius: 10px;
-  padding: 25px;
-  margin: 15px;
-  transition: 0.7s ease;
+.about q {
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+#about > div > div {
+  padding: 50px;
 }
 
 .card:hover {
@@ -245,6 +253,27 @@ section {
     width: calc(148% + 1.3px);
     height: 130px;
   }
+}
+
+.Skills {
+  background: linear-gradient(0deg, #00aeff, #00ff73);
+}
+.Skills .card h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.Skills .card {
+  padding: 25px 50px;
+}
+#skills > div > div:nth-child(1) > h2 > svg {
+  height: 20px;
+  width: 30px;
+  fill: white;
+}
+#skills > div > div:nth-child(2) > h2 > svg {
+  height: 20px;
+  width: 30px;
+  fill: white;
 }
 
 .projects {
