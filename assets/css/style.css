@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  /* font-size: 1em; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +45,7 @@ header div {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
 }
 
@@ -67,6 +68,11 @@ header div {
 .navigation a:hover {
   background-color: #000000;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  body > header > nav > ul > li:nth-child(3) {
+    padding-top: 20px;
+  }
 }
 section {
   padding: 100px 200px;
@@ -194,13 +200,20 @@ section {
     );
   background-blend-mode: multiply; */
 }
+@media screen and (max-width: 768px) {
+  .about .card q {
+    font-size: 1.5em;
+  }
+  .about .card p {
+    font-size: 1.4em;
+  }
+}
 .about q {
   padding: 5px;
   font-size: 1.2em;
 }
-
 #about > div > div {
-  padding: 50px;
+  padding: 25px;
 }
 
 .card:hover {
@@ -264,6 +277,7 @@ section {
 }
 .Skills .card {
   padding: 25px 50px;
+  font-size: 1.17em;
 }
 #skills > div > div:nth-child(1) > h2 > svg {
   height: 20px;
@@ -338,16 +352,18 @@ section {
 }
 .contact .icon {
   font-size: 4.5em;
-  color: #00ff73;
+  /* color: #00ff73; */
+  color: rgb(124, 124, 124);
 }
 
 .contact .info h3 {
-  color: rgb(59, 187, 0);
+  /* color: rgb(59, 187, 0); */
+  color: rgb(95, 95, 95);
 }
 
 .contact .info p {
-  font-size: 1.5em;
-  color: #006b30;
+  font-size: 1.3em;
+  /* color: #006b30; */
 }
 .contact .card {
   background: linear-gradient(
