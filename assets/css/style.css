@@ -199,7 +199,7 @@ section {
   justify-content: space-around;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  /* background: url(/assets/images/landing2.png) no-repeat; */
+  /* background: url(/assets/images/landing2.webp) no-repeat; */
   /* background: linear-gradient(90deg, rgb(0, 0, 0), cyan); */
   background-image: url("/assets/images/blob-scene-haikei.svg");
   background-size: cover;
