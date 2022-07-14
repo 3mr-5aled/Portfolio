@@ -624,3 +624,10 @@ div p {
 .en-ar:hover {
   background-color: white;
 }
+
+.linkedin {
+  text-decoration: none;
+  color: cyan;
+  font-weight: bold;
+  cursor: pointer;
+}
