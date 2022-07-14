@@ -70,6 +70,11 @@ label input:checked + .menu {
   box-shadow: 0 0 0 100vw #001e3cce, 0 0 0 100vw #001e3cc4;
   border-radius: 0;
 }
+@media screen and (max-width: 768px) {
+  label input:checked + .menu {
+    box-shadow: 0 0 0 150vh #001e3cce, 0 0 0 150vh #001e3cc4;
+  }
+}
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
@@ -90,11 +95,12 @@ label input:checked + .menu .hamburger:before {
 
 label input:checked + .menu + ul {
   opacity: 1;
+  z-index: 100;
 }
 
 label ul {
   /* height: 100vh; */
-  z-index: 200;
+  z-index: -30;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -448,11 +454,11 @@ div p {
   background-color: #0400ff;
 } /* blue */
 .video {
-  width: 40%;
+  width: 55%;
   background-color: #00ff22;
 } /* green */
-.blender {
-  width: 30%;
+.computer {
+  width: 95%;
   background-color: #ff4800;
 } /* orange */
 
@@ -592,7 +598,7 @@ div p {
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 640px) {
   body {
     font-size: 12px;
   }
@@ -624,7 +630,12 @@ div p {
 .en-ar:hover {
   background-color: white;
 }
-
+@media screen and (max-width: 768px) {
+  .en-ar {
+    right: 120px;
+    position: absolute;
+  }
+}
 .linkedin {
   text-decoration: none;
   color: cyan;
