@@ -201,7 +201,7 @@ section {
   flex-wrap: wrap;
   /* background: url(/assets/images/landing2.webp) no-repeat; */
   /* background: linear-gradient(90deg, rgb(0, 0, 0), cyan); */
-  background-image: url("/assets/images/blob-scene-haikei.svg");
+  background-image: url("../images/blob-scene-haikei.svg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -292,8 +292,8 @@ section {
   color: #fff;
   min-width: 21.25em;
   box-shadow: -7px 7px 25px rgb(1 1 1 / 73%);
-  backdrop-filter: blur(5rem);
-  -webkit-backdrop-filter: blur(5rem);
+  /* backdrop-filter: blur(5rem); */
+  /* -webkit-backdrop-filter: blur(5rem); */
   border-radius: 10px;
   padding: 25px;
   margin: 15px;
@@ -403,6 +403,58 @@ section {
   width: 30px;
   fill: white;
 }
+div svg {
+  height: 30px;
+  width: 30px;
+  fill: white;
+  display: inline-block;
+}
+div p {
+  display: inline-block;
+  vertical-align: super;
+}
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: rgba(221, 221, 221, 0.411); /* Grey background */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  padding-right: 10px;
+  border-radius: 10px;
+  color: white; /* White text color */
+}
+
+.html {
+  width: 90%;
+  background-color: #ff7b00;
+} /* orange */
+.css {
+  width: 80%;
+  background-color: #2196f3;
+} /* cyan */
+.js {
+  width: 65%;
+  background-color: #c0c404;
+  color: rgb(255, 255, 255);
+} /* yellow */
+.photo {
+  width: 85%;
+  background-color: #0400ff;
+} /* blue */
+.video {
+  width: 40%;
+  background-color: #00ff22;
+} /* green */
+.blender {
+  width: 30%;
+  background-color: #ff4800;
+} /* orange */
 
 .projects {
   background: linear-gradient(0deg, #c4009a, red);
@@ -558,4 +610,17 @@ section {
   body {
     font-size: 10px;
   }
+}
+
+.en-ar {
+  text-decoration: none;
+  color: black;
+  border: solid;
+  border-radius: 25px;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+}
+.en-ar:hover {
+  background-color: white;
 }
