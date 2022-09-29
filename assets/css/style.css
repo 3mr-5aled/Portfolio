@@ -642,3 +642,18 @@ div p {
   font-weight: bold;
   cursor: pointer;
 }
+.infoLinks {
+  text-decoration: none;
+  color: cyan;
+}
+.infoSpan {
+  color: yellow;
+}
+
+.about li {
+  list-style: none;
+}
+.infoHeader {
+  text-align: center;
+  padding: 5px 15px;
+}
