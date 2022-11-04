@@ -36,16 +36,13 @@ window.onscroll = function () {
     // We add pageYOffset for compatibility with IE.
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
         document.getElementsByTagName("header")[0].style.backgroundColor = 'var(--main-color)';
-        document.querySelector("body > header > div > a.logo").style.color = 'black';
-        document.querySelector("body > header > a").style.color = 'black';
-        document.querySelector("body > header > a").style.backgroundColor = 'white';
+        document.getElementById("logo").className = "logo-scroll";
+        document.querySelector("body > header > a").className = "en-ar-scroll";
         document.getElementsByTagName("header")[0].style.boxShadow = '0px 7px 15px 5px rgb(0 0 0 / 32%)';
     } else {
         document.getElementsByTagName("header")[0].style.backgroundColor = 'transparent';
-        document.querySelector("body > header > div > a.logo").style.color = 'white';
-        document.querySelector("body > header > a").style.color = 'white';
-        document.querySelector("body > header > a").style.backgroundColor = 'black';
+        document.getElementById("logo").className = "logo";
+        document.querySelector("body > header > a").className = "en-ar";
         document.getElementsByTagName("header")[0].style.boxShadow = 'none';
-
     }
 };
