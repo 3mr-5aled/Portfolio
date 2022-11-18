@@ -610,15 +610,14 @@ div p {
   /* width: 100%;
   height: 100%; */
   background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/Animal_card.webp);
+    url(../images/quotacalc.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageTwo {
   /* width: 100%;
   height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/python_login.webp);
+  background: linear-gradient(#0094c69c, #001242a9), url(../images/school.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -626,7 +625,7 @@ div p {
   /* width: 100%;
   height: 100%; */
   background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/parallax.webp);
+    url(../images/python_login.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -634,7 +633,7 @@ div p {
   /* width: 100%;
   height: 100%; */
   background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/quotaCalcBannerPreview.webp);
+    url(../images/Animal_card.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
