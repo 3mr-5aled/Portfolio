@@ -378,6 +378,24 @@ section {
 .facelogo {
   border-radius: 50%;
   margin-top: 25px;
+  animation: up-down 1s infinite alternate-reverse;
+  -webkit-animation: up-down 1s infinite alternate-reverse;
+}
+@keyframes up-down {
+  from {
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+  }
 }
 .social-icons a {
   color: white;
