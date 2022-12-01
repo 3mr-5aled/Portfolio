@@ -701,22 +701,69 @@ div p {
 
 .contact {
   background: linear-gradient(360deg, var(--third-color), var(--fifth-color));
-}
-.contact .icon {
-  font-size: 4.5em;
-  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact .info h3 {
-  color: rgb(184, 184, 184);
+.contactForm {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  width: min-content;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
-.contact .info p {
-  font-size: 1.3em;
+.contactForm > h1 {
+  margin-bottom: 2rem;
 }
-.contact .card {
-  background: linear-gradient(to right bottom, var(--main-color), black);
+.contactForm > form {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  gap: 1rem;
+}
+@media screen and (max-width: 640px) {
+  .contactForm > form {
+    width: 17rem;
+  }
+}
+.contactForm > form > input,
+.contactForm > form > select,
+.contactForm > form > textarea {
+  padding: 1.4rem;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contactForm > form > textarea {
+  height: 10rem;
+}
+.contactForm > form > button {
+  font-size: 20px;
+  width: 8rem;
+  align-self: center;
+  padding: 1.2rem;
+  cursor: pointer;
+  border-radius: 25px;
+  background: var(--main-color);
   color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .footer {
   background-color: var(--fifth-color);
