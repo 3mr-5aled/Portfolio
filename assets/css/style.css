@@ -751,6 +751,7 @@ div p {
 .contactForm > form > textarea {
   height: 10rem;
 }
+
 .contactForm > form > button {
   font-size: 20px;
   width: 8rem;
@@ -765,6 +766,11 @@ div p {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
+.contactForm > form > button:hover,
+.contactForm > form > button:focus {
+  background-color: var(--secondary--color);
+}
+
 .footer {
   background-color: var(--fifth-color);
   color: white;
