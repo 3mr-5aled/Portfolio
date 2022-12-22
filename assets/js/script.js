@@ -1,13 +1,13 @@
-// hamburger menu 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
+// hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    links.forEach(link => {
-        link.classList.toggle('fade');
-    });
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
 });
 
 // scroll to top
@@ -33,16 +33,19 @@ hamburger.addEventListener('click', () => {
 var scrollTrigger = 100;
 
 window.onscroll = function () {
-    // We add pageYOffset for compatibility with IE.
-    if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-        document.getElementsByTagName("header")[0].style.backgroundColor = 'var(--main-color)';
-        document.getElementById("logo").className = "logo-scroll";
-        document.querySelector("body > header > a").className = "en-ar-scroll";
-        document.getElementsByTagName("header")[0].style.boxShadow = '0px 7px 15px 5px rgb(0 0 0 / 32%)';
-    } else {
-        document.getElementsByTagName("header")[0].style.backgroundColor = 'transparent';
-        document.getElementById("logo").className = "logo";
-        document.querySelector("body > header > a").className = "en-ar";
-        document.getElementsByTagName("header")[0].style.boxShadow = 'none';
-    }
+  // We add pageYOffset for compatibility with IE.
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].style.backgroundColor =
+      "var(--main-color)";
+    document.getElementById("logo").className = "logo-scroll";
+    document.querySelector("body > header > a").className = "en-ar-scroll";
+    document.getElementsByTagName("header")[0].style.boxShadow =
+      "0px 7px 15px 5px rgb(0 0 0 / 32%)";
+  } else {
+    document.getElementsByTagName("header")[0].style.backgroundColor =
+      "transparent";
+    document.getElementById("logo").className = "logo";
+    document.querySelector("body > header > a").className = "en-ar";
+    document.getElementsByTagName("header")[0].style.boxShadow = "none";
+  }
 };

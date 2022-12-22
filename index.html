@@ -81,12 +81,15 @@
         </ul>
     </label>
     <!-- landing page -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
     <section class="main">
         <div>
             <img class="facelogo" src="assets/images/facelogo.webp" alt="face logo" width="250px" height="250px">
         </div>
         <div>
-            <h2>Hello, I'm 3mr 5aled(Amr Khaled)<br><span>Programmer & Designer</span></h2>
+            <h2>Hello, I'm 3mr 5aled(Amr Khaled)<br><div>I'm a&nbsp;</div><span class="auto-type"></span></h2>
             <h3>I build WEBSITES and design ART</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="social-icons">
@@ -99,6 +102,9 @@
                 <a rel="noopener" target="_blank" href="https://github.com/3mr-5aled"><i
                         class="fa-brands fa-github"></i></a>
             </div>
+            <a href="#about">
+                <div class="down-arrow"></div>
+            </a>
         </div>
     </section>
     <!-- about section -->
@@ -128,7 +134,7 @@
                         💬 Ask me about <span class="infoSpan"> HTML , CSS , Python</span>
                     </li>
                     <li>
-                        📫 How to reach me <a class="infoLinks" href="mailto:3mr5aled.dev@gmail.com">Here</a>
+                        📫 How to reach me <a class="infoLinks" href="#contact">Here</a>
                     </li>
                     <li>
                         📄 Know about my experiences <a class="infoLinks"
@@ -191,7 +197,7 @@
                 </svg>
                 <p>JavaScript</p>
                 <div class="container">
-                    <div class="skills js">65%</div>
+                    <div class="skills js">55%</div>
                 </div>
             </div>
             <div class="card">
@@ -241,7 +247,7 @@
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
         <div class="content">
-            <div class="project-card imageOne">
+            <div class="project-card cardImage imageOne">
                 <div class="project-info">
                     <p class="project-category">Web app</p>
                     <strong class="project-title">
@@ -250,16 +256,43 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card imageTwo">
+            <div class="project-card cardImage imageTwo">
                 <div class="project-info">
                     <p class="project-category">Frontend (Team work)</p>
                     <strong class="project-title">
                         <span>School Website</span>
-                        <a href="https://el-salam-college.netlify.app/" class="more-details">More details</a>
+                        <a href="https://as-salam-college.netlify.app/" class="more-details">More details</a>
                     </strong>
                 </div>
             </div>
-            <div class="project-card imageThree">
+            <div class="project-card cardImage imageSix">
+                <div class="project-info">
+                    <p class="project-category">Frontend</p>
+                    <strong class="project-title">
+                        <span>Mr Hangman</span>
+                        <a href="https://mr-hangman.netlify.app/" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card cardImage imageSeven">
+                <div class="project-info">
+                    <p class="project-category">Frontend</p>
+                    <strong class="project-title">
+                        <span>Mr Todos</span>
+                        <a href="https://mr-todos.netlify.app/" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card cardImage imageEight">
+                <div class="project-info">
+                    <p class="project-category">Frontend</p>
+                    <strong class="project-title">
+                        <span>Mr Notes</span>
+                        <a href="https://mr-notes.netlify.app/" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card cardImage imageThree">
                 <div class="project-info">
                     <p class="project-category">Website figure</p>
                     <strong class="project-title">
@@ -268,7 +301,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card imageFour">
+            <div class="project-card cardImage imageFour">
                 <div class="project-info">
                     <p class="project-category">Backend</p>
                     <strong class="project-title">
@@ -277,7 +310,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card imageFive">
+            <div class="project-card cardImage imageFive">
                 <div class="project-info">
                     <p class="project-category">Design</p>
                     <strong class="project-title">
@@ -323,7 +356,7 @@
                 href="https://www.youtube.com/channel/UCveX_0uBOHVHbpV838OGXVA"
                 style="text-decoration:none; color  :#ff6262;">Islam Mahfouz</a></p>
         <p class="footer-title">Copyrights @ <span>3mr 5aled</span></p>
-        <p>Last modified summer 2022</p>
+        <p>Last modified Autumn 2022</p>
         <div class="social-icons">
             <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/3mr5aled/"><i
                     class="fab fa-linkedin"></i></a>
@@ -334,6 +367,15 @@
     </footer>
     <script src="/assets/js/script.js">
     </script>
+<script>
+    // Typing effect
+var typed = new Typed(".auto-type", {
+  strings: ["Developer !", "Designer !", "Creator !"],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true,
+});
+</script>
 </body>
 
 </html>
