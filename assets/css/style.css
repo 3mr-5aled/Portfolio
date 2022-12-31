@@ -376,7 +376,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   background-image: linear-gradient(#121212bb, #005d7c80),
@@ -487,11 +487,17 @@ section {
     transform: translateY(5px) rotate(-5deg);
   }
 }
-
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: fit-content;
+}
 .social-icons a {
   color: white;
   font-size: 1.7em;
-  padding-right: 30px;
 }
 .social-icons a i {
   transition: all 0.5s ease-in-out;
@@ -500,6 +506,7 @@ section {
   transform: translate(0px, -10px);
   transition: all 0.5s ease-in;
 }
+
 /* .buyMeCoffee {
   position: absolute;
   top: 2px;
@@ -708,7 +715,6 @@ section {
 }
 
 .project-card {
-  background-color: black;
   border: 2px solid black;
   color: white;
   min-height: 15rem;
@@ -718,6 +724,8 @@ section {
   margin: 20px;
   transition: 0.7s ease;
   position: relative;
+  cursor: pointer;
+  box-shadow: #041f38 12px 9px 7px 2px;
 }
 
 .project-card:hover {
@@ -725,7 +733,7 @@ section {
 }
 
 .project-card:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 @media screen and (max-width: 640px) {
   .project-card {
@@ -735,77 +743,63 @@ section {
 }
 
 .imageOne {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/quotacalc.webp);
+  background: linear-gradient(#0094c663, black), url(../images/quotacalc.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageTwo {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9), url(../images/school.webp);
+  background: linear-gradient(#0094c663, black), url(../images/school.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageThree {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/Animal_card.webp);
+  background: linear-gradient(#0094c663, black), url(../images/hangman.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageFour {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/python_login.webp);
+  background: linear-gradient(#0094c663, black), url(../images/todoapp.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageFive {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/AK_collage.webp);
+  background: linear-gradient(#0094c663, black), url(../images/notesapp.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageSix {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9), url(../images/hangman.webp);
+  background: linear-gradient(#0094c663, black), url(../images/Animal_card.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageSeven {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9), url(../images/todoapp.webp);
+  background: linear-gradient(#0094c663, black),
+    url(../images/python_login.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageEight {
-  /* width: 100%;
-  height: 100%; */
-  background: linear-gradient(#0094c69c, #001242a9),
-    url(../images/notesapp.webp);
+  background: linear-gradient(#0094c663, black), url(../images/AK_collage.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* .project-image img {
+.projectImage {
+  border-radius: 0.5rem 0.5rem 0 0;
   width: 100%;
-} */
+  object-fit: cover;
+  height: max(9rem, 20vh);
+  max-height: max(10rem, 30vh);
+  mix-blend-mode: var(overlay);
+}
 
 .project-info {
   padding: 1rem;
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.664);
+  background: rgb(0, 0, 0);
+  box-shadow: black 0px -8px 6px 0px;
 }
 
 .project-category {
@@ -829,7 +823,7 @@ section {
 }
 
 .more-details:hover {
-  color: var(--secondary--color);
+  color: var(--secondary-color);
 }
 
 /* contact section */
@@ -842,6 +836,7 @@ section {
 
 .contactForm {
   background-color: #12212b;
+  box-shadow: #0000007a 14px 5px 20px 2px;
   color: white;
   display: flex;
   align-self: center;
@@ -906,7 +901,7 @@ section {
 }
 .contactForm > form > button:hover,
 .contactForm > form > button:focus {
-  background-color: var(--secondary--color);
+  background-color: var(--secondary-color);
 }
 
 /* footer section */
@@ -918,7 +913,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .footer div {
@@ -929,7 +924,7 @@ section {
 .footer span {
   font-size: 1.1em;
   font-weight: 600;
-  color: var(--secondary--color);
+  color: var(--secondary-color);
 }
 
 .footer .social-icons a {
