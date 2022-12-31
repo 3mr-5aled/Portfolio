@@ -53,7 +53,6 @@ window.onscroll = function () {
   let progbars = document.querySelectorAll(".skill")
 
   if (window.scrollY >= section.offsetTop - 100) {
-    console.log("working")
     progbars.forEach((el) => {
       el.style.width = el.dataset.width
     })
