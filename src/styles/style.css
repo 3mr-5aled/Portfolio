@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: 100%;
   /* backdrop-filter: blur(5px); */
-  /* background-image: url(../images/polygon-scatter-haikei.svg); */
+  /* background-image: url(assets/images/polygon-scatter-haikei.svg); */
   /* background-image: linear-gradient(180deg, #006192, #0b181e); */
 
   background-image: radial-gradient(at top left, #041f38, transparent),
@@ -391,7 +391,7 @@ section {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   background-image: linear-gradient(#121212bb, #005d7c80),
-    url("../images/blob-scene-haikei.svg");
+    url("assets/images/blob-scene-haikei.svg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -759,43 +759,47 @@ section {
 }
 
 .imageOne {
-  background: linear-gradient(#0094c663, black), url(../images/quotacalc.webp);
+  background: linear-gradient(#0094c663, black),
+    url(assets/images/quotacalc.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageTwo {
-  background: linear-gradient(#0094c663, black), url(../images/school.webp);
+  background: linear-gradient(#0094c663, black), url(assets/images/school.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageThree {
-  background: linear-gradient(#0094c663, black), url(../images/hangman.webp);
+  background: linear-gradient(#0094c663, black), url(assets/images/hangman.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageFour {
-  background: linear-gradient(#0094c663, black), url(../images/todoapp.webp);
+  background: linear-gradient(#0094c663, black), url(assets/images/todoapp.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageFive {
-  background: linear-gradient(#0094c663, black), url(../images/notesapp.webp);
+  background: linear-gradient(#0094c663, black),
+    url(assets/images/notesapp.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageSix {
-  background: linear-gradient(#0094c663, black), url(../images/Animal_card.webp);
+  background: linear-gradient(#0094c663, black),
+    url(assets/images/Animal_card.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageSeven {
   background: linear-gradient(#0094c663, black),
-    url(../images/python_login.webp);
+    url(assets/images/python_login.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .imageEight {
-  background: linear-gradient(#0094c663, black), url(../images/AK_collage.webp);
+  background: linear-gradient(#0094c663, black),
+    url(assets/images/AK_collage.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }

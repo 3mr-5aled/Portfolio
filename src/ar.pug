@@ -1,0 +1,246 @@
+doctype html
+html(lang="ar" dir="rtl")
+    head
+        meta(charset="UTF-8")
+        // Primary Meta Tags
+        title 3mr 5aled - مبرمج و مصمم
+        meta(name="title" content="3mr 5aled - Programmer & Designer")
+        meta(name="description" content="I am a Secondary Student and I love Programming and Design")
+        // HTML Meta Tags
+        title 3mr 5aled - Programmer &amp; Designer
+        meta(name="description" content="I am a Secondary Student and I love Programming and Design")
+        // Facebook Meta Tags
+        meta(property="og:url" content="http://3mr5aled.netlify.app/")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="3mr 5aled - Programmer & Designer")
+        meta(property="og:description" content="I am a Secondary Student and I love Programming and Design")
+        meta(property="og:image" content="https://3mr5aled.netlify.app/assets/images/webimage.png")
+        // Twitter Meta Tags
+        meta(name="twitter:card" content="summary_large_image")
+        meta(property="twitter:domain" content="3mr5aled.netlify.app")
+        meta(property="twitter:url" content="http://3mr5aled.netlify.app/")
+        meta(name="twitter:title" content="3mr 5aled - Programmer & Designer")
+        meta(name="twitter:description" content="I am a Secondary Student and I love Programming and Design")
+        meta(name="twitter:image" content="https://3mr5aled.netlify.app/assets/images/webimage.png")
+        // Meta Tags Generated via https://www.opengraph.xyz
+        // Open Graph / Facebook
+        //
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="https://3mr5aled.netlify.app/">
+            <meta property="og:title" content="3mr 5aled - Programmer & Designer">
+            <meta property="og:description" content="I am a Secondary Student and I love Programming and Design">
+            <meta property="og:image" content="	https://3mr5aled.netlify.app/assets/images/webimage.png">
+            <meta property="image" content="https://3mr5aled.netlify.app/assets/images/webimage.png">
+        // Twitter
+        //
+            <meta property="twitter:card" content="summary_large_image">
+            <meta property="twitter:url" content="https://3mr5aled.netlify.app/">
+            <meta property="twitter:title" content="3mr 5aled - Programmer & Designer">
+            <meta property="twitter:description" content="I am a Secondary Student and I love Programming and Design">
+            <meta property="twitter:image" content="https://3mr5aled.netlify.app/assets/images/webimage.png">
+        // Rest of data
+        meta(name="keywords" content="Amr, Khaled, HTML, CSS, JavaScript")
+        meta(name="author" content="Amr Khaled")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon" type="assets/images/icon" href="assets/images/favicon.ico")
+        // styles
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(rel="stylesheet" href="all.css")
+        // script
+        script(defer, src="assets/js/app.js")
+    body
+
+        include components/header-ar
+        script(src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12")
+        section.main
+            .mainImg
+                img.facelogo(src="assets/images/main.png" alt="face logo")
+                img.codelogo(src="assets/images/code.webp" alt="code icon")
+                img.editlogo(src="assets/images/edit.webp" alt="code icon")
+            div
+                h2 اهلا, انا 3mr 5aled(عمرو خالد)
+                    br
+                    div انا&nbsp;
+                    span.auto-type-ar
+                h3 انا أبني مواقع و أصنع فناً
+                a.main-btn(href="#projects") إلق نظرة علي عملي
+                .social-icons
+                    a(rel="noopener" target="_blank" href="https://www.linkedin.com/in/3mr5aled/")
+                        i.fab.fa-linkedin
+                    a(href="#contact")
+                        i.fa-solid.fa-envelope
+                    a(rel="noopener" target="_blank" href="https://t.me/offical3mr5aled")
+                        i.fa-brands.fa-telegram
+                    a(rel="noopener" target="_blank" href="https://github.com/3mr-5aled")
+                        i.fab.fa-github
+                    a(href="https://www.buymeacoffee.com/3mr5aled" target="_blank" rel="noopener noreferrer")
+                        i.fa.fa-coffee
+                        a(href="#about")
+                            .down-arrow
+        section#about.about
+            h2.title نبذة عني
+            .content.hidden
+                .card
+                    h2.infoHeader
+                        | مرحبا 👋, انا عمرو خالد
+                    h3.infoHeader
+                        | مطور واجهات أمامية و مصمم من جمهورية مصر العربية
+                    ul
+                        li
+                            | 🔭 أعمل الأن علي مشروع
+                            span.infoSpan  Quota calc 
+                        li
+                            | 🌱 انا اتعلم حاليا لغة
+                            span.infoSpan  Reacct 
+                        li
+                            | 👨‍💻 يمكنك زيارة جميع مشاريعي عن طريق
+                            a.infoLinks(href="https://3mr5aled.netlify.app/") موقعي الخاص
+                        li
+                            | 💬 يمكنك أن تسألني عن
+                            span.infoSpan  HTML , CSS , Javascript
+                        li
+                            | 📫 يمكنك التواصل مع عبر الإيميل
+                            a.infoLinks(href="#contact")
+                                | من
+                                | هنا
+                        li
+                            | 📄 تعرف علي خبراتي من خلال حسابي علي لينكدان
+                            a.infoLinks(href="https://www.linkedin.com/in/3mr5aled/") لينكدان
+                        li
+                            | ⚡ حقيقة طريفة انا لا أحب الجبن
+        //
+            <div class="custom-shape-divider-top-1644089374" style="background-color:var(--main-color)">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill" style="fill:var(--fourth-color);"></path>
+            </svg>
+            </div>
+        section#skills.Skills
+            h2.title Skills
+            div.content.hidden
+                div.card
+                    h2
+                        i.fas.fa-code
+                        | البرمجة
+                    i.fab.fa-html5
+                    p HTML
+                    .container
+                        .skill.html(style="width:0;" data-width="90%") 90%
+                    i.fab.fa-css3-alt
+                    p CSS
+                    .container
+                        .skill.css(style="width:0;" data-width="80%") 80%
+                    i.fab.fa-js-square
+                    p JavaScript
+                    .container
+                        .skill.js(style="width:0;" data-width="55%") 55%
+                div.card
+                    h2
+                        i.fas.fa-photo-film
+                        | مهارات أخرى
+                    i.fas.fa-pen-ruler
+                    p تعديل الصور
+                    .container
+                        .skill.photo(style="width:0;" data-width="85%") 85%
+                    i.fas.fa-film
+                    p تعديل الفيديوهات
+                    .container
+                        .skill.video(style="width:0;" data-width="55%") 55%
+                    i.fas.fa-display
+                    p مهارات الكمبيوتر
+                    .container
+                        .skill.computer(style="width:0;" data-width="95%") 95%
+        section#projects.projects
+            h2.title المشاريع
+            .content
+                .project-card.hidden.cardImage
+                    .imageOne.projectImage
+                    .project-info
+                        p.project-category Web app
+                        strong.project-title
+                            span Quota-Calc
+                            a.more-details(href="https://quotacalc.netlify.app/") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageTwo.projectImage
+                    .project-info
+                        p.project-category Frontend (Team work)
+                        strong.project-title
+                            span School Website
+                            a.more-details(href="https://as-salam-college.netlify.app/") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageThree.projectImage
+                    .project-info
+                        p.project-category Frontend
+                        strong.project-title
+                            span Mr Hangman
+                            a.more-details(href="https://mr-hangman.netlify.app/") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageFour.projectImage
+                    .project-info
+                        p.project-category Frontend
+                        strong.project-title
+                            span Mr Todos
+                            a.more-details(href="https://mr-todos.netlify.app/") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageFive.projectImage
+                    .project-info
+                        p.project-category Frontend
+                        strong.project-title
+                            span Mr Notes
+                            a.more-details(href="https://mr-notes.netlify.app/") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageSix.projectImage
+                    .project-info
+                        p.project-category Website figure
+                        strong.project-title
+                            span Animal Cards
+                            a.more-details(href="https://noto.li/s2ygqB") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageSeven.projectImage
+                    .project-info
+                        p.project-category Backend
+                        strong.project-title
+                            span Python login system
+                            a.more-details(href="https://noto.li/Ksf9P0") المزيد من التفاصيل
+                .project-card.hidden.cardImage
+                    .imageEight.projectImage
+                    .project-info
+                        p.project-category Design
+                        strong.project-title
+                            span My Designs
+                            a.more-details(href="https://drive.google.com/drive/folders/1LhVvIvfvMUGk6AHi1cHClFcyAm5PIhVm?usp=sharing") المزيد من التفاصيل
+        //
+            <div class="custom-shape-divider-top-1644089374" style="background:var(--fifth-color);">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill" style="fill:var(--fourth-color);"></path>
+            </svg>
+            </div>
+        section#contact.cards.contact
+            h2.title تواصل
+            .contactForm.hidden
+                h1 لنتحدث سويًا
+                form.form(action="https://formsubmit.io/send/5edcd4cc-74fc-4787-8aee-79d9f4c8fade" method="POST")
+                    input#name(name="_redirect" type="hidden" value="https://3mr5aled.netlify.app/formsubmission.html")
+                    input(type="text" name="Name" placeholder="الإسم بالكامل", required)
+                    input(type="email" name="Email" placeholder="البريد الإلكتروني", required)
+                    // spam fooler
+                    input(name="_formsubmit_id" type="text" style="display:none")
+                    input(type="text" name="Subject" placeholder="العنوان", required)
+                    textarea(name="Message" placeholder="الرسالة", required)
+                    button(type="submit") ارسل
+
+        include components/footer-ar
+
+        script(src="assets/js/script.js").
+
+        script.
+            var typed = new Typed(".auto-type-ar", {
+            strings: ["مبرمج !", "مصمم !", "مبتكر !"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true,
+            });

@@ -1,0 +1,26 @@
+{
+  "name": "portfollio",
+  "version": "1.0.0",
+  "description": "This is my Own website hope you like it 🐱‍💻",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amr Khaled",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-pug": "^5.0.0",
+    "static-server": "^2.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Amr1515/Morosoft/issues"
+  },
+  "homepage": "https://github.com/Amr1515/Morosoft#readme"
+}
