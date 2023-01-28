@@ -1,0 +1,117 @@
+@use "../helpers/vars" as *;
+
+label {
+	.menu {
+		position: fixed;
+		right: -100px;
+		top: -100px;
+		z-index: 100;
+		width: 205px;
+		height: 197px;
+		background: $fifth-color;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-radius: 50% 50% 50% 50%;
+		-webkit-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+		box-shadow: 0 0 0 0 $fourth-color, 0 0 0 0 $fourth-color;
+		cursor: pointer;
+	}
+	.hamburger {
+		position: absolute;
+		top: 135px;
+		left: 50px;
+		width: 30px;
+		height: 2px;
+		background: white;
+		display: block;
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		-webkit-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+		&:after {
+			-webkit-transition: 0.5s ease-in-out;
+			transition: 0.5s ease-in-out;
+			content: "";
+			position: absolute;
+			display: block;
+			width: 100%; 
+			height: 100%;
+			background: white;
+			bottom: -10px;
+		}
+		&:before {
+			-webkit-transition: 0.5s ease-in-out;
+			transition: 0.5s ease-in-out;
+			content: "";
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: white;
+			top: -10px;
+		}
+	}
+	input {
+		display: none;
+		&:checked {
+			+ {
+				.menu {
+					background: #041f38cf;
+					box-shadow: 0 0 0 100vw #041f38cf, 0 0 0 100vw #041f38cf;
+					border-radius: 0;
+					.hamburger {
+						-webkit-transform: rotate(45deg);
+						transform: rotate(45deg);
+						&:after {
+							-webkit-transform: rotate(90deg);
+							transform: rotate(90deg);
+							bottom: 0;
+						}
+						&:before {
+							-webkit-transform: rotate(90deg);
+							transform: rotate(90deg);
+							top: 0;
+						}
+					}
+					+ {
+						ul {
+							opacity: 1;
+							z-index: 100;
+						}
+					}
+				}
+			}
+		}
+	}
+	ul {
+		z-index: -30;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		-webkit-transition: 0.25s 0s ease-in-out;
+		transition: 0.25s 0s ease-in-out;
+		list-style: none;
+	}
+	a {
+		margin: 1em;
+		display: block;
+		background-color: $background-color_1;
+		border: 5px white solid;
+		color: $color_1;
+		border-radius: 10px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.17em;
+		font-weight: 500;
+		padding: 15px;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: $background-color_2;
+			color: $color_1;
+		}
+	}
+}

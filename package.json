@@ -7,7 +7,9 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-livereload": "^4.0.2"
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

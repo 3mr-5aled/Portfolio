@@ -1,0 +1,22 @@
+@use "../helpers/vars" as *;
+
+.footer {
+	background-color: $background-color_6;
+	color: $color_1;
+	padding: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	span {
+		font-size: 1.1em;
+		font-weight: 600;
+		color: $color_8;
+	}
+	.social-icons {
+		a {
+			font-size: 1.3em;
+			padding: 0 12px 0 0;
+		}
+	}
+}

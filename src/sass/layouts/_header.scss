@@ -1,0 +1,73 @@
+@use "../helpers/vars" as *;
+
+header {
+	background-color: transparent;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 150px;
+	box-shadow: none;
+	div {
+		display: flex;
+		align-items: center;
+	}
+}
+.logo {
+	text-decoration: none;
+	color: $color_1;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8em;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: $color_3;
+	}
+}
+.logo-scroll {
+	text-decoration: none;
+	color: $color_2;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.8em;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: $color_1;
+	}
+}
+#logoimage {
+	width: 70px;
+	height: 70px;
+}
+.en-ar {
+	text-decoration: none;
+	background-color: $background-color_1;
+	color: $color_1;
+	border: solid;
+	border-radius: 25px;
+	padding: 5px;
+	font-size: large;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_2;
+	}
+}
+.en-ar-scroll {
+	text-decoration: none;
+	background: white;
+	color: $color_2;
+	border: solid;
+	border-radius: 25px;
+	padding: 5px;
+	font-size: large;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_1;
+	}
+}

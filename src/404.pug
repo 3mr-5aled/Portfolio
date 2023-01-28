@@ -1,78 +1,78 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        title 3mr 5aled
-        // this is website description which appears in search engine
-        meta(name="description" content="3mr 5aled Website Student-Developer-Designer")
-        // Image icon
-        link(rel="shortcut icon" type="images/icon" href="assets/images/favicon.ico")
-        // main CSS
-        link(rel="stylesheet" href="assets/css/master.css" type="text/css")
-        // Render all Elements Normaly
-        link(rel="stylesheet" href="assets/css/normalize.css")
-        // Font Awesome
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer")
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer")
-        link(rel="preconnect" href="https://fonts.gstatic.com")
-        // Google Fonts
-        link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet")
-        // styles
-        link(rel="stylesheet" href="all.css")
-    style.
-        body {
-        background: linear-gradient(to top right, #00aeff, #001242);
-        background-repeat: no-repeat;        }
-        header {
-            background-color: var(--main-color);
-        }
-        .logo:hover {
-        color: black;
-        }
-        img.logo:hover{
-        height: 70px;
-        width: 70px;
-        background: #00aeff;
-        border-radius: 10px;
-        transition: all 0.5s ease-in;
-        }
-        section{
-        height:100vh;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        }
-        article {
-        width: fit-content;
-        width: -moz-fit-content;
-        height: fit-content;
-        line-height: 35px;
-        padding: 20px;
-        text-align: center;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        }
-        footer{
-            position:fixed;
-            bottom:0;
-        }
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 3mr 5aled
+    // this is website description which appears in search engine
+    meta(name="description" content="3mr 5aled Website Student-Developer-Designer")
+    // Image icon
+    link(rel="shortcut icon" type="images/icon" href="assets/images/favicon.ico")
+    // main CSS
+    link(rel="stylesheet" href="assets/css/master.css" type="text/css")
+    // Render all Elements Normaly
+    link(rel="stylesheet" href="assets/css/normalize.css")
+    // Font Awesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    // Google Fonts
+    link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet")
+    // styles
+    link(rel="stylesheet" href="main.css")
+  style.
+    body {
+    background: linear-gradient(to top right, #00aeff, #001242);
+    background-repeat: no-repeat;        }
+    header {
+      background-color: var(--main-color);
+    }
+    .logo:hover {
+    color: black;
+    }
+    img.logo:hover{
+    height: 70px;
+    width: 70px;
+    background: #00aeff;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+    }
+    section{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+    article {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    line-height: 35px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+    }
+    footer{
+      position:fixed;
+      bottom:0;
+    }
 
-    body
-        include components/header
+  body
+    include components/header
 
-        section 
-            article
-                h2 Sorry we don&apos;t have this page
-                p click on the icon below to get back to the main page
-                h2 نأسف لكن هذه الصفحة لا توجد لدينا
-                p اضغط علي الأيقونة بالأسفل للرجوع للصفحة الرئيسية
-                a(href="index.html")
-                    img.logo(src="assets/images/Logo.webp" alt="Logo" width="50px" height="50px")
+    section 
+      article
+        h2 Sorry we don&apos;t have this page
+        p click on the icon below to get back to the main page
+        h2 نأسف لكن هذه الصفحة لا توجد لدينا
+        p اضغط علي الأيقونة بالأسفل للرجوع للصفحة الرئيسية
+        a(href="index.html")
+          img.logo(src="assets/images/Logo.webp" alt="Logo" width="50px" height="50px")
 
-        include components/footer
+    include components/footer
 
 

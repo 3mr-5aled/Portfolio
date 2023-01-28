@@ -35,8 +35,7 @@ var scrollTrigger = 100
 window.onscroll = function () {
   // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-    document.getElementsByTagName("header")[0].style.backgroundColor =
-      "var(--main-color)"
+    document.getElementsByTagName("header")[0].style.backgroundColor = "#0094c6"
     document.getElementById("logo").className = "logo-scroll"
     document.querySelector("body > header > a").className = "en-ar-scroll"
     document.getElementsByTagName("header")[0].style.boxShadow =

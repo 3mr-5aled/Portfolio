@@ -11,6 +11,8 @@ const concat = require("gulp-concat")
 const pug = require("gulp-pug")
 // js obfuscator
 // const javascriptObfuscator = require("gulp-javascript-obfuscator")
+// convert scss into css
+const sass = require("gulp-sass")(require("sass"))
 
 function pugtoHTML() {
   return (
@@ -24,12 +26,17 @@ function pugtoHTML() {
 }
 
 function moveCss() {
-  return gulp
-    .src(["src/styles/*.css"])
-    .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(concat("all.css"))
-    .pipe(gulp.dest("build"))
-    .pipe(livereload())
+  return (
+    gulp
+      .src("src/sass/**/*.scss")
+      .pipe(sass().on("error", sass.logError))
+      // .pipe(gulp.dest('./css'));
+      // .src(["src/styles/*.css"])
+      // .pipe(cleanCSS({ compatibility: "ie8" }))
+      // .pipe(concat("all.css"))
+      .pipe(gulp.dest("build"))
+      .pipe(livereload())
+  )
 }
 
 function jsobfuscator() {
@@ -46,5 +53,8 @@ exports.default = function () {
   require("./server.js")
   livereload.listen()
 
-  gulp.watch(["src/**/*.pug"], parallel(pugtoHTML, moveCss, jsobfuscator))
+  gulp.watch(
+    ["src/**/*.pug", "src/sass/**/*.scss"],
+    parallel(pugtoHTML, moveCss, jsobfuscator)
+  )
 }
