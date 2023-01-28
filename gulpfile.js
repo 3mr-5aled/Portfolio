@@ -54,7 +54,7 @@ exports.default = function () {
   livereload.listen()
 
   gulp.watch(
-    ["src/**/*.pug", "src/sass/**/*.scss"],
+    ["src/**/*.pug", "src/sass/**/*.scss", "src/js/*.js"],
     parallel(pugtoHTML, moveCss, jsobfuscator)
   )
 }
