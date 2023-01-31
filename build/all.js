@@ -1,28 +1,31 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entery) => {
+"use strict";
+
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entery) {
     // console.log(entery)
     if (entery.isIntersecting) {
-      entery.target.classList.add("show")
+      entery.target.classList.add("show");
     } else {
-      entery.target.classList.remove("show")
+      entery.target.classList.remove("show");
     }
-  })
-})
-
-const hiddenElements = document.querySelectorAll(".hidden")
-hiddenElements.forEach((el) => observer.observe(el))
+  });
+});
+var hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(function (el) {
+  return observer.observe(el);
+});
+"use strict";
 
 // hamburger menu
-const hamburger = document.querySelector(".hamburger")
-const navLinks = document.querySelector(".nav-links")
-const links = document.querySelectorAll(".nav-links li")
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open")
-  links.forEach((link) => {
-    link.classList.toggle("fade")
-  })
-})
+var hamburger = document.querySelector(".hamburger");
+var navLinks = document.querySelector(".nav-links");
+var links = document.querySelectorAll(".nav-links li");
+hamburger.addEventListener("click", function () {
+  navLinks.classList.toggle("open");
+  links.forEach(function (link) {
+    link.classList.toggle("fade");
+  });
+});
 
 // scroll to top
 // const scrollToTop = document.querySelector('.scroll-to-top');
@@ -44,30 +47,25 @@ hamburger.addEventListener("click", () => {
 // });
 
 // header scroll change
-var scrollTrigger = 100
-
+var scrollTrigger = 100;
 window.onscroll = function () {
   // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-    document.getElementsByTagName("header")[0].style.backgroundColor = "#0094c6"
-    document.getElementById("logo").className = "logo-scroll"
-    document.querySelector("body > header > a").className = "en-ar-scroll"
-    document.getElementsByTagName("header")[0].style.boxShadow =
-      "0px 7px 15px 5px rgb(0 0 0 / 32%)"
+    document.getElementsByTagName("header")[0].style.backgroundColor = "#0094c6";
+    document.getElementById("logo").className = "logo-scroll";
+    document.querySelector("body > header > a").className = "en-ar-scroll";
+    document.getElementsByTagName("header")[0].style.boxShadow = "0px 7px 15px 5px rgb(0 0 0 / 32%)";
   } else {
-    document.getElementsByTagName("header")[0].style.backgroundColor =
-      "transparent"
-    document.getElementById("logo").className = "logo"
-    document.querySelector("body > header > a").className = "en-ar"
-    document.getElementsByTagName("header")[0].style.boxShadow = "none"
+    document.getElementsByTagName("header")[0].style.backgroundColor = "transparent";
+    document.getElementById("logo").className = "logo";
+    document.querySelector("body > header > a").className = "en-ar";
+    document.getElementsByTagName("header")[0].style.boxShadow = "none";
   }
-
-  let section = document.querySelector("#skills")
-  let progbars = document.querySelectorAll(".skill")
-
+  var section = document.querySelector("#skills");
+  var progbars = document.querySelectorAll(".skill");
   if (window.scrollY >= section.offsetTop - 100) {
-    progbars.forEach((el) => {
-      el.style.width = el.dataset.width
-    })
+    progbars.forEach(function (el) {
+      el.style.width = el.dataset.width;
+    });
   }
-}
+};

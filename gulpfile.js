@@ -13,6 +13,8 @@ const pug = require("gulp-pug")
 // const javascriptObfuscator = require("gulp-javascript-obfuscator")
 // convert scss into css
 const sass = require("gulp-sass")(require("sass"))
+// js to babel
+const babel = require("gulp-babel")
 
 function pugtoHTML() {
   return (
@@ -26,27 +28,24 @@ function pugtoHTML() {
 }
 
 function moveCss() {
-  return (
-    gulp
-      .src("src/sass/**/*.scss")
-      .pipe(sass().on("error", sass.logError))
-      // .pipe(gulp.dest('./css'));
-      // .src(["src/styles/*.css"])
-      // .pipe(cleanCSS({ compatibility: "ie8" }))
-      // .pipe(concat("all.css"))
-      .pipe(gulp.dest("build"))
-      .pipe(livereload())
-  )
+  return gulp
+    .src("src/sass/**/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(gulp.dest("build"))
+    .pipe(livereload())
 }
 
-function jsobfuscator() {
-  return (
-    gulp
-      .src("src/js/*js")
-      // .pipe(javascriptObfuscator())
-      .pipe(concat("all.js"))
-      .pipe(gulp.dest("build"))
-  )
+function jsBabel() {
+  return gulp
+    .src("src/js/*js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
+    .pipe(concat("all.js"))
+    .pipe(gulp.dest("build"))
 }
 
 exports.default = function () {
@@ -55,6 +54,6 @@ exports.default = function () {
 
   gulp.watch(
     ["src/**/*.pug", "src/sass/**/*.scss", "src/js/*.js"],
-    parallel(pugtoHTML, moveCss, jsobfuscator)
+    parallel(pugtoHTML, moveCss, jsBabel)
   )
 }

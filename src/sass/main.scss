@@ -522,7 +522,7 @@ section {
 			cursor: pointer;
 			border-color: $border-color_1;
 			border-radius: 25px;
-			background: var(--main-color);
+			background: $main-color;
 			color: $color_1;
 			-webkit-border-radius: 25px;
 			-moz-border-radius: 25px;
