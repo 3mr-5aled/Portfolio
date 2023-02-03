@@ -46,6 +46,7 @@ html(lang='ar' dir='rtl')
             "query-input": "required name=search_term_string"
             }
             }
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     body
 
         include /header-ar.pug 
@@ -53,3 +54,15 @@ html(lang='ar' dir='rtl')
         block content
 
         include /footer-ar.pug
+
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
+        </script>
