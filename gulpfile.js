@@ -1,44 +1,35 @@
-const livereload = require("gulp-livereload")
 const gulp = require("gulp")
-// gulp plugin to minify HTML.
-// const htmlmin = require("gulp-htmlmin")
 const { parallel } = require("gulp")
-// gulp plugin to minify CSS, using clean-css
-const cleanCSS = require("gulp-clean-css")
-//  to concat files
-const concat = require("gulp-concat")
-// Enabling you to compile your Pug templates into HTML
-const pug = require("gulp-pug")
-// js obfuscator
-// const javascriptObfuscator = require("gulp-javascript-obfuscator")
-// convert scss into css
 const sass = require("gulp-sass")(require("sass"))
-// js to babel
+const autoprefixer = require("gulp-autoprefixer")
+// const cssnano = require("gulp-cssnano")
 const babel = require("gulp-babel")
+const concat = require("gulp-concat")
+const browserSync = require("browser-sync").create()
 
-function pugtoHTML() {
+function css() {
   return (
     gulp
-      .src("src/*.pug")
-      .pipe(pug({ pretty: true }))
-      // .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest("build"))
-      .pipe(livereload())
-  )
+      .src("src/sass/**/*.scss") //source file to retrieve
+      .pipe(sass()) //sends the source file to the sass plugin
+      .pipe(autoprefixer()) //sends the source file to the autoprefixer plugin
+      // .pipe(cssnano()) //sends the source file to the minifier plugin
+      .on("error", sass.logError) //log errors
+      .pipe(gulp.dest("./build"))
+    // .pipe(browserSync.reload())
+  ) //outputs the result in our public dir
 }
-
-function moveCss() {
-  return gulp
-    .src("src/sass/**/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(gulp.dest("build"))
-    .pipe(livereload())
+function htmlTrans() {
+  return gulp.src("dist/**/*.html").pipe(gulp.dest("build"))
+}
+function imgTrans() {
+  return gulp.src("src/assets/images/*").pipe(gulp.dest("build/assets/images/"))
+  // .pipe(browserSync.reload())
 }
 
 function jsBabel() {
   return gulp
-    .src("src/js/*js")
+    .src("src/js/*.js")
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -46,14 +37,17 @@ function jsBabel() {
     )
     .pipe(concat("all.js"))
     .pipe(gulp.dest("build"))
+  // .pipe(browserSync.reload())
 }
 
 exports.default = function () {
-  require("./server.js")
-  livereload.listen()
-
+  browserSync.init({
+    server: {
+      baseDir: "./build/",
+    },
+  })
   gulp.watch(
-    ["src/**/*.pug", "src/sass/**/*.scss", "src/js/*.js"],
-    parallel(pugtoHTML, moveCss, jsBabel)
+    ["src/**/*.pug", "src/sass/**/*.scss", "dist/**/*.html ", "src/js/*.js"],
+    parallel(css, htmlTrans, imgTrans, jsBabel)
   )
 }

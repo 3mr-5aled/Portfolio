@@ -1,33 +1,27 @@
 {
-  "name": "portfollio",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "This is my Own website hope you like it 🐱‍💻",
-  "main": "index.js",
+  "description": "A sample project that integrates Eleventy, Sass, and Babel with GulpJS.",
+  "scripts": {
+    "start": "eleventy --watch"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "pug": "^3.0.2",
+    "sass": "^1.58.0"
+  },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
+    "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.57.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Amr Khaled",
-  "license": "ISC",
-  "dependencies": {
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-javascript-obfuscator": "^1.1.6",
-    "gulp-minify": "^3.1.0",
-    "gulp-pug": "^5.0.0",
-    "static-server": "^2.2.1"
-  },
-  "bugs": {
-    "url": "https://github.com/Amr1515/Morosoft/issues"
-  },
-  "homepage": "https://github.com/Amr1515/Morosoft#readme"
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0"
+  }
 }

@@ -1,0 +1,55 @@
+doctype html
+html(lang='ar' dir='rtl')
+    head
+        meta(charset='UTF-8')
+        //-  Primary Meta Tags
+        //- title 3mr 5aled - Programmer &amp; Designer
+        title !{title}
+        meta(name='title' content='3mr 5aled - Programmer & Designer')
+        meta(name='description' content='I am a Secondary Student and I love Programming and Design')
+        //-  Facebook Meta Tags
+        meta(property='og:url' content='http://3mr5aled.netlify.app/')
+        //-  Open Graph / Facebook
+        meta(property='og:type' content='website')
+        meta(property='og:title' content='3mr 5aled - Programmer & Designer')
+        meta(property='og:description' content='I am a Secondary Student and I love Programming and Design')
+        meta(property='og:image' content='https://3mr5aled.netlify.app/assets/images/webimage.png')
+        //-  Twitter Meta Tags
+        meta(name='twitter:card' content='summary_large_image')
+        meta(property='twitter:domain' content='3mr5aled.netlify.app')
+        meta(property='twitter:url' content='http://3mr5aled.netlify.app/')
+        meta(name='twitter:title' content='3mr 5aled - Programmer & Designer')
+        meta(name='twitter:description' content='I am a Secondary Student and I love Programming and Design')
+        meta(name='twitter:image' content='https://3mr5aled.netlify.app/assets/images/webimage.png')
+        //-  Rest of data
+        meta(name='keywords' content='Amr,Khaled,developer,programmer,designer,3mr,5aled')
+        meta(name='author' content='Amr Khaled')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='shortcut icon' type='images/icon' href='/assets/images/favicon.ico')
+        //-  styles
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css' integrity='sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        link(rel='stylesheet' href='/main.css')
+        //-  scripts
+        script(defer='' src='/all.js')
+        //-  SEO
+        meta(name='google-site-verification' content='DncjwYBwJrUTwR0yQP4CLfSJnwaN8sTkIcuAU3OOiqU')
+        script(type='application/ld+json').
+            {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "3mr5aled",
+            "url": "https://3mr5aled.netlify.app/",
+            "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
+            }
+    body
+
+        include /header-ar.pug 
+
+        block content
+
+        include /footer-ar.pug

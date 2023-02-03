@@ -40,14 +40,15 @@
 }
 html {
 	width: 100vw;
-}
+}  
 body {
 	user-select: none !important;
 	-webkit-user-select: none;
 	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
-	background-image: radial-gradient(at top left, #041f38, transparent), radial-gradient(at top right, #1da1f2, transparent), radial-gradient(at bottom left, #007fda, transparent);
+	background: linear-gradient(133deg, #0094c6, #001242);
+	// background-image: radial-gradient(at top left, #041f38, transparent), radial-gradient(at top right, #1da1f2, transparent), radial-gradient(at bottom left, #007fda, transparent);
 	background-repeat: no-repeat;
 }
 
@@ -361,6 +362,7 @@ section {
 	}
 }
 .project-card {
+	width: min-content;
 	border: 2px solid black;
 	color: $color_1;
 	min-height: 15rem;
@@ -377,42 +379,58 @@ section {
 	}
 }
 .imageOne {
-	background: linear-gradient(#0094c663, black), url(assets/images/quotacalc.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/quotacalc.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageTwo {
-	background: linear-gradient(#0094c663, black), url(assets/images/school.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/school.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageThree {
-	background: linear-gradient(#0094c663, black), url(assets/images/hangman.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/hangman.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageFour {
-	background: linear-gradient(#0094c663, black), url(assets/images/todoapp.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/todoapp.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageFive {
-	background: linear-gradient(#0094c663, black), url(assets/images/notesapp.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/notesapp.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageSix {
-	background: linear-gradient(#0094c663, black), url(assets/images/Animal_card.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/Animal_card.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageSeven {
-	background: linear-gradient(#0094c663, black), url(assets/images/python_login.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/python_login.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .imageEight {
-	background: linear-gradient(#0094c663, black), url(assets/images/AK_collage.webp);
+	// background: linear-gradient(#0094c663, black), url(assets/images/AK_collage.webp);
+	width: 200px;
+	height: 360px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -423,6 +441,11 @@ section {
 	height: max(9rem, 20vh);
 	max-height: max(10rem, 30vh);
 	mix-blend-mode: var(overlay);
+	img{
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
 .project-info {
 	padding: 1rem;
