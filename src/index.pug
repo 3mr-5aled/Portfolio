@@ -37,41 +37,42 @@ block content
         h2.title About
         .content.hidden
             .card
-                h2.infoHeader
-                    | Hi &#x1F44B;, I&apos;m Amr Khaled
-                h3.infoHeader
-                    | A passionate frontend developer and designer from Egypt
-                ul
-                    li
-                        | &#x1F52D; I&rsquo;m currently working on 
-                        span.infoSpan  Quota calc 
-                    li
-                        | &#x1F331; I&rsquo;m currently learning 
-                        span.infoSpan  React 
-                    li
-                        | &#x1F468;&zwj;&#x1F4BB; All of my projects are available at 
-                        a.infoLinks(href='https://3mr5aled.netlify.app/')
-                            | My personal
-                            | Website
-                    li
-                        | &#x1F4AC; Ask me about 
-                        span.infoSpan  HTML , CSS , Javascript
-                    li
-                        | &#x1F4EB; How to reach me 
-                        a.infoLinks(href='#contact') Here
-                    li
-                        | &#x1F4C4; Know about my experiences 
-                        a.infoLinks(href='https://www.linkedin.com/in/3mr5aled/') Linkedin
-                    li
-                        | &#x26A1; Fun fact I don&apos;t like cheese
-    //
-        <div class="custom-shape-divider-top-1644089374" style="background-color:var(--main-color)">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        class="shape-fill" style="fill: $fourth-color;"></path>
-        </svg>
-        </div>
+                for about in collections.about
+                    h2.infoHeader
+                        | !{about.data.h2}
+                    h3.infoHeader
+                        | !{about.data.h3}
+                    ul !{about.data.content}
+                    //- li 
+                    //-     | &#x1F52D; I&rsquo;m currently working on 
+                    //-     span.infoSpan  Quota calc 
+                    //- li
+                    //-     | &#x1F331; I&rsquo;m currently learning 
+                    //-     span.infoSpan  React 
+                    //- li
+                    //-     | &#x1F468;&zwj;&#x1F4BB; All of my projects are available at 
+                    //-     a.infoLinks(href='https://3mr5aled.netlify.app/')
+                    //-         | My personal
+                    //-         | Website
+                    //- li
+                    //-     | &#x1F4AC; Ask me about 
+                    //-     span.infoSpan  HTML , CSS , Javascript
+                    //- li
+                    //-     | &#x1F4EB; How to reach me 
+                    //-     a.infoLinks(href='#contact') Here
+                    //- li
+                    //-     | &#x1F4C4; Know about my experiences 
+                    //-     a.infoLinks(href='https://www.linkedin.com/in/3mr5aled/') Linkedin
+                    //- li
+                    //-     | &#x26A1; Fun fact I don&apos;t like cheese
+                    //
+                        <div class="custom-shape-divider-top-1644089374" style="background-color:var(--main-color)">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill" style="fill: $fourth-color;"></path>
+                        </svg>
+                        </div>
     section#skills.Skills
         h2.title Skills
         .content.hidden

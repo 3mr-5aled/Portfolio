@@ -38,33 +38,13 @@ block content
         h2.title نبذة عني
         .content.hidden
             .card
-                h2.infoHeader
-                    | مرحبا 👋, انا عمرو خالد
-                h3.infoHeader
-                    | مطور واجهات أمامية و مصمم من جمهورية مصر العربية
-                ul
-                    li
-                        | 🔭 أعمل الأن علي مشروع
-                        span.infoSpan  Quota calc 
-                    li
-                        | 🌱 انا اتعلم حاليا لغة
-                        span.infoSpan  Reacct 
-                    li
-                        | 👨‍💻 يمكنك زيارة جميع مشاريعي عن طريق
-                        a.infoLinks(href="https://3mr5aled.netlify.app/") موقعي الخاص
-                    li
-                        | 💬 يمكنك أن تسألني عن
-                        span.infoSpan  HTML , CSS , Javascript
-                    li
-                        | 📫 يمكنك التواصل مع عبر الإيميل
-                        a.infoLinks(href="#contact")
-                            | من
-                            | هنا
-                    li
-                        | 📄 تعرف علي خبراتي من خلال حسابي علي لينكدان
-                        a.infoLinks(href="https://www.linkedin.com/in/3mr5aled/") لينكدان
-                    li
-                        | ⚡ حقيقة طريفة انا لا أحب الجبن
+                for about in collections.about
+                    h2.infoHeader
+                        | !{about.data.h2Ar}
+                    h3.infoHeader
+                        | !{about.data.h3Ar}
+                    ul !{about.data.contentAr}
+
     //
         <div class="custom-shape-divider-top-1644089374" style="background-color:var(--main-color)">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
