@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A sample project that integrates Eleventy, Sass, and Babel with GulpJS.",
   "scripts": {
-    "start": "eleventy --watch"
+    "start": "eleventy --watch",
+    "build": "eleventy"
   },
   "author": "Your Name",
   "license": "MIT",

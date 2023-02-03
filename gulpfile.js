@@ -19,9 +19,9 @@ function css() {
     // .pipe(browserSync.reload())
   ) //outputs the result in our public dir
 }
-function htmlTrans() {
-  return gulp.src("dist/**/*.html").pipe(gulp.dest("build"))
-}
+// function htmlTrans() {
+//   return gulp.src("dist/**/*.html").pipe(gulp.dest("build"))
+// }
 function imgTrans() {
   return gulp.src("src/assets/images/*").pipe(gulp.dest("build/assets/images/"))
   // .pipe(browserSync.reload())
@@ -48,6 +48,6 @@ exports.default = function () {
   })
   gulp.watch(
     ["src/**/*.pug", "src/sass/**/*.scss", "dist/**/*.html ", "src/js/*.js"],
-    parallel(css, htmlTrans, imgTrans, jsBabel)
+    parallel(css, imgTrans, jsBabel)
   )
 }
