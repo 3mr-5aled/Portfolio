@@ -24,6 +24,3 @@ collections:
       - { label: "h2", name: "h2", widget: "string" }
       - { label: "h3", name: "h3", widget: "string" }
       - { label: "content", name: "content", widget: "code" }
-      - { label: "h2Ar", name: "h2Ar", widget: "string" }
-      - { label: "h3Ar", name: "h3Ar", widget: "string" }
-      - { label: "contentAr", name: "contentAr", widget: "code" }

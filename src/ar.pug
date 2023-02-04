@@ -33,12 +33,12 @@ block content
         h2.title نبذة عني
         .content.hidden
             .card
-                for about in collections.about
+                for aboutAr in collections.aboutAr
                     h2.infoHeader
-                        | !{about.data.h2Ar}
+                        | !{aboutAr.data.h2Ar}
                     h3.infoHeader
-                        | !{about.data.h3Ar}
-                    ul !{about.data.contentAr}
+                        | !{aboutAr.data.h3Ar}
+                    ul !{aboutAr.data.contentAr}
 
     section#skills.Skills
         h2.title Skills
