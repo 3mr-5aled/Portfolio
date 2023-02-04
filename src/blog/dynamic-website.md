@@ -1,5 +1,4 @@
 ---
-layout: projects
 title: Dynamic Website
 Tags:
   - Dynamic Website

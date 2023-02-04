@@ -49,7 +49,7 @@ exports.default = function () {
     },
   })
   gulp.watch(
-    ["src/**/*.pug", "src/sass/**/*.scss", "dist/**/*.html ", "src/js/*.js"],
+    ["src/**/*.pug", "src/sass/**/*.scss", "src/js/*.js"],
     parallel(css, imgTrans, jsBabel)
   )
 }
