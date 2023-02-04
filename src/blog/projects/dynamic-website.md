@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: "Dynamic Website "
+title: Dynamic Website
 Tags:
   - Dynamic Website
 thumbnail: /assets/images/webimage.png
