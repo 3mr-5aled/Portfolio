@@ -1,4 +1,5 @@
 ---
+title: about-en
 tags : ['about']
 h2 : Hi &#x1F44B;, I&apos;m Amr Khaled
 h3 : A passionate frontend developer and designer from Egypt

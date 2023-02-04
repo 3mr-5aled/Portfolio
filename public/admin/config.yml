@@ -21,6 +21,7 @@ collections:
     create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - { label: "title", name: "title", widget: "string" }
       - { label: "h2", name: "h2", widget: "string" }
       - { label: "h3", name: "h3", widget: "string" }
       - { label: "content", name: "content", widget: "code" }
