@@ -38,6 +38,7 @@
       }
       }
     </script>
+    <script defer="" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header>
@@ -61,7 +62,7 @@
           <div>انا&nbsp;</div><span class="auto-type-ar"></span>
         </h2>
         <h3>انا أبني مواقع و أصنع فناً</h3><a class="main-btn" href="#projects">إلق نظرة علي عملي</a>
-        <div class="social-icons"><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/3mr5aled/"><i class="fab fa-linkedin"></i></a><a href="#contact"><i class="fa-solid fa-envelope"></i></a><a rel="noopener" target="_blank" href="https://t.me/offical3mr5aled"><i class="fa-brands fa-telegram"></i></a><a rel="noopener" target="_blank" href="https://github.com/3mr-5aled"><i class="fab fa-github"></i></a><a href="https://www.buymeacoffee.com/3mr5aled" target="_blank" rel="noopener noreferrer"><i class="fa fa-coffee"></i><a href="#about">
+        <div class="social-icons"><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/3mr5aled/"><i class="fab fa-linkedin"></i></a><a href="#contact"><i class="fa-solid fa-envelope"></i></a><a rel="noopener" target="_blank" href="https://t.me/offical3mr5aled"><i class="fa-brands fa-telegram"></i></a><a rel="noopener" target="_blank" href="https://github.com/3mr-5aled"><i class="fab fa-github"></i></a><a href="https://www.buymeacoffee.com/3mr5aled" target="_blank" rel="noopener"><a href="#about">
               <div class="down-arrow"></div></a></a></div>
       </div>
     </section>
@@ -75,15 +76,6 @@
         </div>
       </div>
     </section>
-    <!--
-    <div class="custom-shape-divider-top-1644089374" style="background-color:var(--main-color)">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path
-    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-    class="shape-fill" style="fill:$fourth-color;"></path>
-    </svg>
-    </div>
-    -->
     <section class="Skills" id="skills">
       <h2 class="title">Skills</h2>
       <div class="content hidden">
@@ -203,5 +195,16 @@
       <p>أخر تعديل خريف 2022</p>
       <div class="social-icons"><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/3mr5aled/"><i class="fab fa-linkedin"></i></a><a rel="noopener" target="_blank" href="https://t.me/offical3mr5aled"><i class="fa-brands fa-telegram"></i></a><a rel="noopener" target="_blank" href="https://github.com/3mr-5aled"><i class="fab fa-github"></i></a><a href="https://www.buymeacoffee.com/3mr5aled" target="_blank" rel="noopener noreferrer"><i class="fa fa-coffee"></i></a></div>
     </footer>
+    <script>
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                  });
+              }
+          });
+      }
+    </script>
   </body>
 </html>

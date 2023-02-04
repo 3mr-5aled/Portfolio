@@ -46,7 +46,7 @@ html(lang='en' dir='ltr')
             "query-input": "required name=search_term_string"
             }
             }
-            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        script(defer='' src="https://identity.netlify.com/v1/netlify-identity-widget.js")
     body
 
         include /header.pug 
@@ -56,14 +56,13 @@ html(lang='en' dir='ltr')
         include /footer.pug
 
 
-        <script>
+        script.
             if (window.netlifyIdentity) {
                 window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                    });
-                }
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                        });
+                    }
                 });
             }
-        </script>
