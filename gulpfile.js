@@ -15,15 +15,17 @@ function css() {
       .pipe(autoprefixer()) //sends the source file to the autoprefixer plugin
       // .pipe(cssnano()) //sends the source file to the minifier plugin
       .on("error", sass.logError) //log errors
-      .pipe(gulp.dest("./build"))
+      .pipe(gulp.dest("./public"))
     // .pipe(browserSync.reload())
   ) //outputs the result in our public dir
 }
 // function htmlTrans() {
-//   return gulp.src("dist/**/*.html").pipe(gulp.dest("build"))
+//   return gulp.src("dist/**/*.html").pipe(gulp.dest("public"))
 // }
 function imgTrans() {
-  return gulp.src("src/assets/images/*").pipe(gulp.dest("build/assets/images/"))
+  return gulp
+    .src("src/assets/images/*")
+    .pipe(gulp.dest("public/assets/images/"))
   // .pipe(browserSync.reload())
 }
 
@@ -36,14 +38,14 @@ function jsBabel() {
       })
     )
     .pipe(concat("all.js"))
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("public"))
   // .pipe(browserSync.reload())
 }
 
 exports.default = function () {
   browserSync.init({
     server: {
-      baseDir: "./build/",
+      baseDir: "./public/",
     },
   })
   gulp.watch(
