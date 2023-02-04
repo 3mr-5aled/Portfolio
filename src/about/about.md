@@ -1,7 +1,7 @@
 ---
+tags : ['about']
 h2 : Hi &#x1F44B;, I&apos;m Amr Khaled
 h3 : A passionate frontend developer and designer from Egypt
-tags : ['about']
 content : '<li>&#x1F52D; I&rsquo;m currently working on <span class="infoSpan"> Quota calc </span></li>
 <li>&#x1F331; I&rsquo;m currently learning <span class="infoSpan"> React </span></li>
 <li>&#x1F468;&zwj;&#x1F4BB; All of my projects are available at <a class="infoLinks" href="https://3mr5aled.netlify.app/">
