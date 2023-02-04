@@ -2,6 +2,6 @@
 title: Dynamic Website
 tag:
   - Dynamic Website
-thumbnail: /assets/images/webimage.png
+img: /assets/images/webimage.png
 link: https://3mr5aled.netlify.app/
 ---
