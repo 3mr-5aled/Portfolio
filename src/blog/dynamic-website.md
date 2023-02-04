@@ -1,5 +1,5 @@
 ---
-title: Dynamic Website
+title: Portfoillio
 Tags:
   - Dynamic Website
 thumbnail: /assets/images/webimage.png
