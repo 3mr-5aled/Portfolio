@@ -10,19 +10,29 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "tag", name: "Tags", widget: "list", default: ["Front End"]}
-      - {label: "img", name: "thumbnail", widget: "image"}
-      - {label: "Link", name: "link", widget: "string"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "tag", name: "Tags", widget: "list", default: ["Front End"] }
+      - { label: "img", name: "thumbnail", widget: "image" }
+      - { label: "Link", name: "link", widget: "string" }
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "about" # Used in the UI
     folder: "src/blog" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "h2", name: "H2", widget: "string"}
-      - {label: "h3", name: "H3", widget: "string"}
-      - {label: "content", name: "content", widget: "code", default_language :"html"}
-      - {label: "h2Ar", name: "H2 Arabic", widget: "string"}
-      - {label: "h3Ar", name: "H3 Arabic", widget: "string"}
-      - {label: "contentAr", name: "content Arabic", widget: "code", default_language:"html"}
+      - { label: "h2", name: "H2", widget: "string" }
+      - { label: "h3", name: "H3", widget: "string" }
+      - {
+          label: "content",
+          name: "content",
+          widget: "code",
+          default_language :"html",
+        }
+      - { label: "h2Ar", name: "H2 Arabic", widget: "string" }
+      - { label: "h3Ar", name: "H3 Arabic", widget: "string" }
+      - {
+          label: "contentAr",
+          name: "content Arabic",
+          widget: "code",
+          default_language:"html",
+        }
