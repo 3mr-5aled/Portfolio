@@ -1,5 +1,5 @@
 ---
-title: Frontend Mentor - Time tracking dashboard
+title: Time tracking dashboard
 tag:
   - Front End
 tags:
