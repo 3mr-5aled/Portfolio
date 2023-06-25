@@ -1,5 +1,5 @@
 ---
-title: Tomory Ecommerce Webapp
+title: Tomory Ecommerce
 tag:
   - React + Firebase
 tags:

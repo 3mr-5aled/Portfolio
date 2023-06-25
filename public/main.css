@@ -450,6 +450,7 @@ section {
 }
 .card i {
   font-size: 30px;
+  margin-right: 2px;
   fill: white;
   display: inline-block;
 }
@@ -491,6 +492,10 @@ section {
 .custom-shape-divider-top-1644089374 .shape-fill {
   fill: var(--main-color);
   z-index: 25;
+}
+
+.flex {
+  display: flex;
 }
 
 #skills .card {
@@ -543,7 +548,7 @@ section {
 }
 
 .photo {
-  background-color: #0400ff;
+  background-color: cyan;
 }
 
 .video {
@@ -551,7 +556,7 @@ section {
 }
 
 .computer {
-  background-color: #ff4800;
+  background-color: purple;
 }
 
 .projects .content {
@@ -672,6 +677,7 @@ section {
 }
 
 .more-details {
+  white-space: nowrap;
   text-decoration: none;
   color: yellow;
   transition: all 0.3s ease-in-out;
