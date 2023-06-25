@@ -506,6 +506,11 @@ section {
   text-align: center;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 640px) {
+  #skills .card img {
+    max-width: 14rem;
+  }
+}
 #skills > div > div:nth-child(1) > h2 > svg {
   height: 20px;
   width: 30px;

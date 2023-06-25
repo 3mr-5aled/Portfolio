@@ -305,6 +305,11 @@ section {
       text-align: center;
       padding-bottom: 10px;
     }
+    @media screen and (max-width: 640px) {
+      img {
+        max-width: 14rem;
+      }
+    }
     padding: 25px 50px;
     font-size: 1.17em;
   }
