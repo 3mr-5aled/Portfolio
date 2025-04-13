@@ -1,7 +1,7 @@
-# 🌐 My Portfolio – Amr Khaled Hassan
+# 🌐 My Portfolio – Amr Khaled Morcy
 
 Welcome to my personal portfolio website!  
-I’m **Amr Khaled Hassan** (a.k.a **3mr 5aled**) — a passionate Egyptian FCIS student who loves programming and designing cool things for the modern web. 😎🐱‍💻🐱‍🐉
+I’m **Amr Khaled Morcy** (a.k.a **3mr 5aled**) — a passionate Egyptian FCIS student who loves programming and designing cool things for the modern web. 😎🐱‍💻🐱‍🐉
 
 This website is a showcase of who I am, what I do, how I can help build meaningful digital experiences and some of my amazing projects.
 
